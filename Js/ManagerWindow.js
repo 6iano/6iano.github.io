@@ -36,79 +36,80 @@ const tracks = [
     { name: 'Vaporwave Vibes', artist: 'VaporKing' }
 ];
 const projectData = {
-                'project-01': {
-                    style: {
-                         color : "#00ffff",
-                         textColor: "",
-                    },
-                    title: 'Modern design system with responsive components and accessibility features',
-                    date: 'N.A.',
-                    location: 'N.A.',
-                    brief: 'An innovative company that combines agriculture and photovoltaics with sustainable agrivoltaic solutions, enhancing energy and crops.',
-                    tools: 'Adobe Illustrator',
-                    link: 'https://design-system-demo.com',
-                    gallery: [
-                        '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/1.png', // Immagine 1
-                        '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/2.png', // Immagine 2
-                        '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/3.png', // Immagine 3
-                        '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/4.png'
-                    ]
-                },
-                'project-02': {
-                    style: {
-                         color : "#ffff00"
-                    },
-                    title: 'E-Commerce Platform',
-                    category: 'Web Development',
-                    date: 'March 2024',
-                    location: 'Italy',
-                    brief: 'Full-stack e-commerce application with real-time inventory management, payment processing, and analytics dashboard. Supports multiple currencies and languages.',
-                    role: 'Full Stack Developer',
-                    tools: 'React, Node.js, MongoDB, Stripe, Redux',
-                    link: 'https://ecommerce-platform-demo.com',
-                    gallery: [
-                        'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop', // Immagine 1
-                        'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop', // Immagine 2
-                        'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop'    //Immagine 3
-                    ]
-                },
-                'project-03': {
-                    style: {
-                         color : "#ff00ff"
-                    },
-                    title: '3D Web Experience',
-                    category: '3D & Interactive',
-                    date: 'May 2024',
-                    location: 'Collaborative',
-                    brief: 'Interactive 3D visualization platform showcasing product models with real-time rendering. Users can rotate, zoom, and customize products in 3D space.',
-                    role: '3D Artist & Web Developer',
-                    tools: 'Three.js, Blender, WebGL, React Three Fiber',
-                    link: 'https://3d-experience-demo.com',
-                    gallery: [
-                        'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop', // Immagine 1
-                        'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop', // Immagine 2
-                        'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop'    //Immagine 3
-                    ]
-                },
-                'project-04': {
-                    style: {
-                         color : "#48bb78"
-                    },
-                    title: 'AI-Powered Design Tool',
-                    category: 'AI Integration',
-                    date: 'August 2024',
-                    location: 'Remote',
-                    brief: 'Smart design tool powered by generative AI that suggests layouts, color schemes, and typography automatically. Features real-time collaboration and version control.',
-                    role: 'AI Integration Specialist',
-                    tools: 'OpenAI API, React, Python, PostgreSQL',
-                    link: 'https://ai-design-tool-demo.com',
-                    gallery: [
-                        'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop', // Immagine 1
-                        'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop', // Immagine 2
-                        'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop'    //Immagine 3
-                    ]
-                }
-            };
+    'project-01': {
+        style: {
+            color: "#00ffff",
+            textColor: "",
+        },
+        title: 'Modern design system with responsive components and accessibility features',
+        date: 'N.A.',
+        location: 'N.A.',
+        resume: 'Questo progetto',
+        brief: 'An innovative company that combines agriculture and photovoltaics with sustainable agrivoltaic solutions, enhancing energy and crops.',
+        tools: 'Adobe Illustrator',
+        link: 'https://design-system-demo.com',
+        gallery: [
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/1.png', // Immagine 1
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/2.png', // Immagine 2
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/3.png', // Immagine 3
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/4.png'
+        ]
+    },
+    'project-02': {
+        style: {
+            color: "#ffff00"
+        },
+        title: 'E-Commerce Platform',
+        category: 'Web Development',
+        date: 'March 2024',
+        location: 'Italy',
+        brief: 'Full-stack e-commerce application with real-time inventory management, payment processing, and analytics dashboard. Supports multiple currencies and languages.',
+        role: 'Full Stack Developer',
+        tools: 'React, Node.js, MongoDB, Stripe, Redux',
+        link: 'https://ecommerce-platform-demo.com',
+        gallery: [
+            'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop', // Immagine 1
+            'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop', // Immagine 2
+            'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop'    //Immagine 3
+        ]
+    },
+    'project-03': {
+        style: {
+            color: "#ff00ff"
+        },
+        title: '3D Web Experience',
+        category: '3D & Interactive',
+        date: 'May 2024',
+        location: 'Collaborative',
+        brief: 'Interactive 3D visualization platform showcasing product models with real-time rendering. Users can rotate, zoom, and customize products in 3D space.',
+        role: '3D Artist & Web Developer',
+        tools: 'Three.js, Blender, WebGL, React Three Fiber',
+        link: 'https://3d-experience-demo.com',
+        gallery: [
+            'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop', // Immagine 1
+            'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop', // Immagine 2
+            'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop'    //Immagine 3
+        ]
+    },
+    'project-04': {
+        style: {
+            color: "#48bb78"
+        },
+        title: 'AI-Powered Design Tool',
+        category: 'AI Integration',
+        date: 'August 2024',
+        location: 'Remote',
+        brief: 'Smart design tool powered by generative AI that suggests layouts, color schemes, and typography automatically. Features real-time collaboration and version control.',
+        role: 'AI Integration Specialist',
+        tools: 'OpenAI API, React, Python, PostgreSQL',
+        link: 'https://ai-design-tool-demo.com',
+        gallery: [
+            'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop', // Immagine 1
+            'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop', // Immagine 2
+            'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop'    //Immagine 3
+        ]
+    }
+};
 // ===== WINDOW MANAGEMENT =====
 function createWindow(type) {
     const id = `${type}-${Date.now()}`;
@@ -147,14 +148,12 @@ function createWindow(type) {
                 <div class="window-content">
                     <div style="border-bottom: 1px solid #718096; padding-bottom: 10px; margin-bottom: 15px;">
                         <h3 style="color: #cbd5e0; margin-bottom: 8px; font-size: 14px;">${project.title}</h3>
-                        <div style="display: flex; justify-content: space-between; font-size: 10px; color: #a0aec0;">
-                            <span><strong>📁 CATEGORIA:</strong> ${project.category}</span>
-                        </div>
-                        <div style="font-size: 10px; color: #a0aec0; margin-top: 5px;">
+                        <div style="font-size: 10px; color: #a0aec0; margin-top: 5px; display: flex; gap: 40px;">
                             <span><strong>📍 LUOGO:</strong> ${project.location}</span>
+                            <span><strong>📅 DATA:</strong> ${project.date}</span>
                         </div>
                         <div style="font-size: 10px; color: #a0aec0; margin-top: 5px;">
-                            <strong>📅 DATA:</strong> ${project.date}
+                            <strong>Sunto:</strong> ${project.resume}
                         </div>
                     </div>
 
@@ -207,23 +206,27 @@ function createWindow(type) {
                     </div>
                 </div>
                 <div class="window-content">
-                    <p><strong style="color: #e58f34;">SELECT YOUR CREATIVE PARTNER:</strong></p>
+                    <p><strong style="color: #e58f34;">COSE DA SAPERE SU DI ME</strong></p>
                     <p style="margin-top: 10px;">
-                        Abilità Passive:
-                        ✦ Pixel-Perfect Accuracy: Ogni dettaglio conta. 
-                        ✦ Multitasking Buff: Gestisco più task senza cali di frame rate. 
-                        ✦ Easter Egg Hunter: Trovo sempre una soluzione creativa dove gli altri vedono un muro. 
+                         Mi chiamo Gennaro, ho 26 anni, e come facilmente intuibile dal mio nome, vengo da Napoli.</br>
+                         Cresciuto come programmatore mi sono convertito al mondo del Design, perchè era quello che veramente desideravo fare.</br>
+                         </br>
+                         Elemento fondamentale, senza di cui non posso farne almeno, le mie playlist nelle mie bellissime CMF.</br>
+                         Sono un videogiocatore e amante dello streetwear, ma non solo...</br>
+                         </br>
+                         Questo è un brevissimo riassunto su di me, qui sotto puoi scaricare il mio CV,
+                         mentre nella cartella "Contatti", trovi tutte le informazioni per contattarmi, anche solo per una chiacchierata</br>
+                         su i film usciti ultimamente :} </br>
                     </p>
 
-                    <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
-                        Sei pronto a giocare?</br>
+                    <div style="font-size: 13px; margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
                         <button onclick="openPDFViewer('CV Grieco Gennaro.pdf', '📄 CV.pdf')" 
                         style="display: inline-block; padding: 8px 16px; background: #4a5568; color: #f7fafc; 
                         text-decoration: none; font-size: 11px; border: 2px solid #718096; border-radius: 3px; 
                         transition: all 0.2s; cursor: pointer; font-family: Courier New, monospace; font-weight: bold;"
                         onmouseover="this.style.background='#718096'; this.style.boxShadow='0 0 8px rgba(113, 128, 150, 0.5)'" 
                         onmouseout="this.style.background='#4a5568'; this.style.boxShadow='none'">
-                            <strong>START PROJECT</strong>
+                            <strong>QUI TROVI IL MIO CV</strong>
                         </button>
                     </div>
                 </div>
@@ -843,7 +846,7 @@ function initSnakeGame() {
 document.addEventListener('click', (e) => {
     const projectFolder = e.target.closest('.project-folder');
     if (projectFolder) {
-        
+
         const projectId = projectFolder.getAttribute('data-project');
         console.log("click project-folder projectId:" + projectId);
         createWindow(projectId);
