@@ -12,20 +12,28 @@ const state = {
 
 const translations = {
     en: {
-        about: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">About.exe', role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', exp: '💼 EXPERIENCES', form: '🎓 FORMATION', skills: '⚡ SKILLS', download: '📥 DOWNLOAD CV' },
-        projects: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Projects.exe', description: 'Modern design system with responsive components and accessibility features.' },
-        contact: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contact.exe', getInTouch: 'GET IN TOUCH', location: '📍 Location: Santa Maria Capua Vetere, Campania, Italy', email: '✉️ Email:', linkedin: '💼 LinkedIn:', github: '🐙 GitHub:', website: '🌐 Website:', sendMessage: '✉️ SEND MESSAGE', yourName: 'Your Name:', yourEmail: 'Your Email:', subject: 'Subject:', message: 'Message:', sendBtn: '📤 SEND EMAIL' },
-        game: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake.exe' },
+        about: { 
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">About', 
+            role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
+            intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', 
+            exp: '💼 EXPERIENCES', 
+            form: '🎓 FORMATION', 
+            skills: '⚡ SKILLS', 
+            download: '📥 DOWNLOAD CV' 
+        },
+        projects: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Projects', description: 'Modern design system with responsive components and accessibility features.' },
+        contact: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contact', getInTouch: 'GET IN TOUCH', location: '📍 Location: Santa Maria Capua Vetere, Campania, Italy', email: '✉️ Email:', linkedin: '💼 LinkedIn:', github: '🐙 GitHub:', website: '🌐 Website:', sendMessage: '✉️ SEND MESSAGE', yourName: 'Your Name:', yourEmail: 'Your Email:', subject: 'Subject:', message: 'Message:', sendBtn: '📤 SEND EMAIL' },
+        game: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake' },
         info: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">ReadMe.txt', role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', exp: '💼 EXPERIENCES', form: '🎓 FORMATION', skills: '⚡ SKILLS', download: '📥 DOWNLOAD CV' },
-        icons: { about: 'About.exe', projects: 'Projects.exe', contact: 'Contact.exe', game: 'Game.exe', info: 'ReadMe.txt' }
+        icons: { about: 'About', projects: 'Projects', contact: 'Contact', game: 'Game', info: 'ReadMe.txt' }
     },
     it: {
-        about: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Chi Sono.exe', role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', intro: 'Specializzato in UI/UX Design, Modellazione 3D ed Esperienze Web Interattive. Basato a Santa Maria Capua Vetere, Italia.', exp: '💼 ESPERIENZE', form: '🎓 FORMAZIONE', skills: '⚡ COMPETENZE', download: '📥 SCARICA CV' },
-        projects: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Progetti.exe', description: 'Sistema di design moderno con componenti responsive e funzioni di accessibilità.' },
-        contact: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contatti.exe', getInTouch: 'CONTATTAMI', location: '📍 Ubicazione: Santa Maria Capua Vetere, Campania, Italia', email: '✉️ Email:', linkedin: '💼 LinkedIn:', github: '🐙 GitHub:', website: '🌐 Sito:', sendMessage: '✉️ INVIA MESSAGGIO', yourName: 'Il Tuo Nome:', yourEmail: 'La Tua Email:', subject: 'Oggetto:', message: 'Messaggio:', sendBtn: '📤 INVIA EMAIL' },
-        game: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake.exe' },
+        about: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Chi Sono', role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', intro: 'Specializzato in UI/UX Design, Modellazione 3D ed Esperienze Web Interattive. Basato a Santa Maria Capua Vetere, Italia.', exp: '💼 ESPERIENZE', form: '🎓 FORMAZIONE', skills: '⚡ COMPETENZE', download: '📥 SCARICA CV' },
+        projects: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Progetti', description: 'Sistema di design moderno con componenti responsive e funzioni di accessibilità.' },
+        contact: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contatti', getInTouch: 'CONTATTAMI', location: '📍 Ubicazione: Santa Maria Capua Vetere, Campania, Italia', email: '✉️ Email:', linkedin: '💼 LinkedIn:', github: '🐙 GitHub:', website: '🌐 Sito:', sendMessage: '✉️ INVIA MESSAGGIO', yourName: 'Il Tuo Nome:', yourEmail: 'La Tua Email:', subject: 'Oggetto:', message: 'Messaggio:', sendBtn: '📤 INVIA EMAIL' },
+        game: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake' },
         info: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Leggimi.txt', role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', exp: '💼 EXPERIENCES', form: '🎓 FORMATION', skills: '⚡ SKILLS', download: '📥 DOWNLOAD CV' },
-        icons: { about: 'Chi Sono.exe', projects: 'Progetti.exe', contact: 'Contatti.exe', game: 'Game.exe', info: 'Leggimi.txt' }
+        icons: { about: 'Chi Sono', projects: 'Progetti', contact: 'Contatti', game: 'Game', info: 'Leggimi.txt' }
     }
 };
 
@@ -208,15 +216,17 @@ function createWindow(type) {
                 <div class="window-content">
                     <p><strong style="color: #e58f34;">COSE DA SAPERE SU DI ME</strong></p>
                     <p style="margin-top: 10px;">
-                         Mi chiamo Gennaro, ho 26 anni, e come facilmente intuibile dal mio nome, vengo da Napoli.</br>
-                         Cresciuto come programmatore mi sono convertito al mondo del Design, perchè era quello che veramente desideravo fare.</br>
-                         </br>
-                         Elemento fondamentale, senza di cui non posso farne almeno, le mie playlist nelle mie bellissime CMF.</br>
-                         Sono un videogiocatore e amante dello streetwear, ma non solo...</br>
-                         </br>
-                         Questo è un brevissimo riassunto su di me, qui sotto puoi scaricare il mio CV,
-                         mentre nella cartella "Contatti", trovi tutte le informazioni per contattarmi, anche solo per una chiacchierata</br>
-                         su i film usciti ultimamente :} </br>
+                        Mi chiamo Gennaro, in arte Giano, ho 26 anni e vengo da Napoli, cosa che, dal nome, si intuisce abbastanza facilmente. 
+                        </br>
+                        </br>
+                        Sono cresciuto come programmatore, ma nel tempo ho capito che il Design era lo spazio in cui riuscivo davvero a esprimermi al meglio.
+                        </br>
+                        </br>
+                        Elemento fondamentale che non può mai mancare è la musica: le mie playlist e le mie CMF diventano parte integrante del mio processo creativo.
+                        Nel tempo libero videogioco, seguo con passione lo streetwear e tutto ciò che ruota attorno alla cultura visiva, ma non solo.
+                        </br>
+                        </br>
+                        Questo è solo un breve riassunto di chi sono. Qui sotto è possibile visualizzare il mio CV, mentre nella sezione Contatti trovi tutti i riferimenti per scrivermi anche solo per scambiare due parole. </br>
                     </p>
 
                     <div style="font-size: 13px; margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
