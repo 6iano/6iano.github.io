@@ -213,16 +213,23 @@ function createWindow(type) {
                         ✦ Pixel-Perfect Accuracy: Ogni dettaglio conta. 
                         ✦ Multitasking Buff: Gestisco più task senza cali di frame rate. 
                         ✦ Easter Egg Hunter: Trovo sempre una soluzione creativa dove gli altri vedono un muro. 
+                    </p>
 
                     <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
                         Sei pronto a giocare?</br>
-                        <a href="https://drive.google.com/file/d/1T_qKunp8h4JpXRM_LwbMllbQZ4IEo4-o/view?usp=drive_link" download="CV Gennaro Grieco.pdf" style="display: inline-block; padding: 8px 16px; background: #4a5568; color: #f7fafc; text-decoration: none; font-size: 11px; border-radius: 3px; transition: all 0.2s; cursor: pointer;" onmouseover="this.style.background='#718096'; this.style.boxShadow='0 0 8px rgba(113, 128, 150, 0.5)'" onmouseout="this.style.background='#4a5568'; this.style.boxShadow='none'">
-                            <strong>START PROJECT<strong>
-                        </a>
+                        <button onclick="openPDFViewer('CV Grieco Gennaro.pdf', '📄 CV.pdf')" 
+                        style="display: inline-block; padding: 8px 16px; background: #4a5568; color: #f7fafc; 
+                        text-decoration: none; font-size: 11px; border: 2px solid #718096; border-radius: 3px; 
+                        transition: all 0.2s; cursor: pointer; font-family: Courier New, monospace; font-weight: bold;"
+                        onmouseover="this.style.background='#718096'; this.style.boxShadow='0 0 8px rgba(113, 128, 150, 0.5)'" 
+                        onmouseout="this.style.background='#4a5568'; this.style.boxShadow='none'">
+                            <strong>START PROJECT</strong>
+                        </button>
                     </div>
                 </div>
             `;
             break;
+
         case 'projects':
             const projectsHTML = Object.entries(projectData)
                 .map(([projectId, project]) => `
@@ -486,6 +493,51 @@ function openImageLightbox(imageUrl, projectTitle) {
         }, 300);
     });
 }
+
+// ===== PDF VIEWER =====
+function openPDFViewer(pdfUrl, title) {
+    const pdfId = 'pdf-' + Date.now();
+    const windowContent = `
+        <div class="window-header">
+            <span class="window-title">📄 ${title}</span>
+            <div class="window-controls">
+                <button class="window-btn">_</button>
+                <button class="window-btn">□</button>
+                <button class="window-btn close" data-close="${pdfId}">×</button>
+            </div>
+        </div>
+        <div class="window-content" style="max-height: fit-content; padding: 0px; overflow: auto; display: flex; flex-direction: column; align-items: center;">
+            <div style="display: flex; gap: 10px;"></div>
+            <iframe src="${pdfUrl}" style="width: 500px; height: 800px; solid #718096; border-radius: 3px;"></iframe>
+        </div>
+    `;
+
+    const windowEl = document.createElement('div');
+    windowEl.className = 'window';
+    windowEl.id = pdfId;
+    windowEl.innerHTML = windowContent;
+    windowEl.style.width = 'flex';
+    windowEl.style.height = 'flex';
+    windowEl.style.left = `calc(50% - 350px)`;
+    windowEl.style.top = `0px`;
+    windowEl.style.zIndex = state.zIndex++;
+
+    document.body.appendChild(windowEl);
+    state.windows[pdfId] = windowEl;
+
+    // Rendi trascinabile
+    makeWindowDraggable(windowEl);
+
+    // Chiudi al click sul bottone X
+    windowEl.querySelector('.window-btn.close').addEventListener('click', () => {
+        windowEl.classList.add('closing');
+        setTimeout(() => {
+            windowEl.remove();
+            delete state.windows[pdfId];
+        }, 300);
+    });
+}
+
 
 // ===== MUSIC PLAYER =====
 const audioPlayer = document.getElementById('audioPlayer');
