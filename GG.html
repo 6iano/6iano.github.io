@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Desktop Portfolio - Virtual OS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #4a5568;
+            --secondary: #718096;
+            --tertiary: #e2e8f0;
+            --dark-bg: #2d3748;
+            --light-bg: #f7fafc;
+            --neon-green: #48bb78;
+            --neon-pink: #ed64a6;
+            --glass-bg: rgba(74, 85, 104, 0.1);
+            --glass-border: rgba(113, 128, 150, 0.3);
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 50%, #2d3748 100%);
+            min-height: 100vh;
+            overflow: hidden;
+            color: #cbd5e0;
+            letter-spacing: 2px;
+        }
+
+        /* ===== BOOT SCREEN ===== */
+        .boot-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            flex-direction: column;
+            gap: 20px;
+            animation: bootFadeOut 0.5s ease-in-out 3s forwards;
+        }
+
+        .boot-text {
+            color: #770f7e;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            text-align: center;
+            animation: typewriter 2s steps(40, end) 0.5s forwards;
+        }
+
+        .boot-bar {
+            width: 200px;
+            height: 20px;
+            border: 2px solid #4a5568;
+            background: #1a202c;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .boot-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #4a5568, #718096);
+            animation: loadBar 2.5s ease-in-out 0.5s forwards;
+        }
+
+        @keyframes typewriter {
+            0% {
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes loadBar {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes bootFadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        /* ===== LOADING SCREEN ===== */
+        .laptop-intro {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 50%, #2d3748 100%);
+            z-index: 8888;
+            flex-direction: column;
+            gap: 30px;
+            animation: fadeOutLaptop 0.8s ease-out 3.5s forwards;
+        }
+
+        .laptop {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .laptop-screen {
+            color: #cbd5e0;
+            font-weight: bold;
+            font-size: 18px;
+            animation: fadeInText 0.5s ease-out 0.3s forwards;
+            opacity: 0;
+        }
+
+        .laptop-base {
+            width: 200px;
+            height: 20px;
+            border: 2px solid #4a5568;
+            background: #1a202c;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .laptop-base::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #4a5568, #718096);
+            animation: loadBar 2.5s ease-in-out 0s forwards;
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOutLaptop {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        /* ===== DESKTOP ===== */
+        .desktop {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            animation: desktopFadeIn 0.5s ease-out 4s forwards;
+        }
+
+        @keyframes desktopFadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* ===== DESKTOP ICONS ===== */
+        .desktop-icons {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+            overflow-y: auto;
+        }
+
+        .desktop-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            cursor: pointer;
+            transition: transform 0.2s, filter 0.2s;
+            user-select: none;
+            width: auto;
+            text-align: center;
+        }
+
+        .desktop-icon:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 8px rgba(113, 128, 150, 0.6));
+        }
+
+        .icon-image {
+            width: 60px;
+            height: 60px;
+            background: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            border-radius: 4px;
+            box-shadow: none;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .special-icon {
+            position: absolute !important;
+            top: 20px;
+            right: 20px;
+            width: auto;
+        }
+
+        /* Icone specifiche */
+        .desktop-icon[data-window="about"] .icon-image {
+            background-image: url('/Users/gennarogrieco/Documents/Projects/Portfolio/Portfolio/icons/about.png');
+        }
+
+        .desktop-icon[data-window="projects"] .icon-image {
+            background-image: url('/Users/gennarogrieco/Documents/Projects/Portfolio/Portfolio/icons/projects.png');
+        }
+
+        .desktop-icon[data-window="contact"] .icon-image {
+            background-image: url('/Users/gennarogrieco/Documents/Projects/Portfolio/Portfolio/icons/contact.png');
+        }
+
+        .desktop-icon[data-window="game"] .icon-image {
+            background-image: url('/Users/gennarogrieco/Documents/Projects/Portfolio/Portfolio/icons/game.png');
+        }
+
+        .desktop-icon[data-window="info"] .icon-image {
+            background-image: url('/Users/gennarogrieco/Documents/Projects/Portfolio/Portfolio/icons/readme.png');
+        }
+
+
+        .icon-label {
+            font-size: 11px;
+            text-align: center;
+            color: #cbd5e0;
+            text-shadow: 0 0 3px rgba(74, 85, 104, 0.5);
+            max-width: 80px;
+            display: block;
+        }
+
+        /* ===== WINDOWS ===== */
+        .window {
+            position: fixed;
+            background: linear-gradient(135deg, rgba(74, 85, 104, 0.15), rgba(113, 128, 150, 0.15));
+            backdrop-filter: blur(10px);
+            border: 2px solid #718096;
+            border-radius: 0;
+            box-shadow: 0 0 25px rgba(74, 85, 104, 0.3), inset 0 0 15px rgba(113, 128, 150, 0.1);
+            min-width: 300px;
+            max-width: 90vw;
+            z-index: 1000;
+            transform: scale(0.8);
+            opacity: 0;
+            animation: windowOpen 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+            touch-action: none;
+        }
+
+        @keyframes windowOpen {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .window.closing {
+            animation: windowClose 0.3s ease-in forwards;
+        }
+
+        @keyframes windowClose {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+        }
+
+        .window-header {
+            background: linear-gradient(90deg, #4a5568, #718096);
+            padding: 8px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: grab;
+            user-select: none;
+            border-bottom: 2px solid #718096;
+        }
+
+        .window-header:active {
+            cursor: grabbing;
+        }
+
+        .window-title {
+            font-weight: bold;
+            color: #f7fafc;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .window-controls {
+            display: flex;
+            gap: 8px;
+        }
+
+        .window-btn {
+            width: 18px;
+            height: 18px;
+            background: rgba(245, 250, 252, 0.2);
+            border: 1px solid rgba(245, 250, 252, 0.3);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: #f7fafc;
+            transition: all 0.2s;
+        }
+
+        .window-btn:hover {
+            background: rgba(245, 250, 252, 0.3);
+        }
+
+        .window-btn.close:hover {
+            background: #c53030;
+        }
+
+        .window-content {
+            padding: 15px;
+            max-height: 400px;
+            overflow-y: auto;
+            color: #cbd5e0;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        /* ===== TASKBAR ===== */
+        .taskbar {
+            height: 50px;
+            background: linear-gradient(180deg, rgba(74, 85, 104, 0.3), rgba(113, 128, 150, 0.3));
+            border-top: 2px solid #718096;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+            gap: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 -5px 15px rgba(74, 85, 104, 0.2);
+        }
+
+        .start-button {
+            padding: 6px 12px;
+            background: linear-gradient(135deg, #4a5568, #718096);
+            border: 2px outset #718096;
+            color: #f7fafc;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .start-button:active {
+            border-style: inset;
+        }
+
+        .start-button:hover {
+            box-shadow: 0 0 12px rgba(113, 128, 150, 0.5);
+        }
+
+        .taskbar-divider {
+            width: 2px;
+            height: 30px;
+            background: #718096;
+            opacity: 0.5;
+        }
+
+        .taskbar-windows {
+            display: flex;
+            gap: 5px;
+            flex: 1;
+            overflow-x: auto;
+        }
+
+        .taskbar-item {
+            padding: 4px 10px;
+            background: rgba(113, 128, 150, 0.15);
+            border: 1px solid #718096;
+            color: #cbd5e0;
+            cursor: pointer;
+            font-size: 11px;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .taskbar-item:hover {
+            background: rgba(113, 128, 150, 0.25);
+            box-shadow: 0 0 8px rgba(113, 128, 150, 0.4);
+        }
+
+        .system-tray {
+            display: flex;
+            gap: 10px;
+            margin-left: auto;
+            align-items: center;
+        }
+
+        .clock {
+            color: #cbd5e0;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* ===== MUSIC PLAYER ===== */
+        .music-player {
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            width: 250px;
+            background: linear-gradient(135deg, rgba(74, 85, 104, 0.2), rgba(113, 128, 150, 0.2));
+            backdrop-filter: blur(10px);
+            border: 2px solid #718096;
+            border-radius: 8px;
+            padding: 12px;
+            z-index: 500;
+            box-shadow: 0 0 20px rgba(74, 85, 104, 0.3);
+        }
+
+        .music-header {
+            color: #cbd5e0;
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .track-info {
+            color: #cbd5e0;
+            font-size: 10px;
+            text-align: center;
+            margin-bottom: 8px;
+            min-height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .track-title {
+            color: #a0aec0;
+            font-weight: bold;
+        }
+
+        .music-controls {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .music-btn {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, #4a5568, #718096);
+            border: 1px solid #718096;
+            color: #f7fafc;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+
+        .music-btn:hover {
+            box-shadow: 0 0 10px rgba(113, 128, 150, 0.5);
+        }
+
+        .music-btn:active {
+            transform: scale(0.95);
+        }
+
+        #progressBar {
+            transition: width 0.1s linear;
+        }
+
+        .track-artist {
+            display: block;
+            font-size: 9px;
+            color: #718096;
+            margin-top: 4px;
+            font-style: italic;
+        }
+
+        /* ===== SNAKE GAME ===== */
+        .game-canvas {
+            display: block;
+            background: #1a202c;
+            border: 2px solid #48bb78;
+            margin-top: 10px;
+        }
+
+        .game-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 11px;
+            color: #48bb78;
+        }
+
+        .game-controls {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .game-btn {
+            padding: 4px 12px;
+            background: #48bb78;
+            color: #1a202c;
+            border: 2px solid #da8c25;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            margin: 2px;
+            transition: all 0.2s;
+        }
+
+        .game-btn:hover {
+            box-shadow: 0 0 8px #48bb78;
+        }
+
+        /* ===== SCROLLBAR ===== */
+        .window-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .window-content::-webkit-scrollbar-track {
+            background: rgba(113, 128, 150, 0.1);
+        }
+
+        .window-content::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #4a5568, #718096);
+            border-radius: 4px;
+        }
+
+        .window-content::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #718096, #a0aec0);
+        }
+
+        /* ===== MOBILE RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .desktop-icons {
+                gap: 12px;
+                padding: 10px;
+            }
+
+            .icon-image {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+
+            .icon-label {
+                font-size: 10px;
+            }
+
+            .window {
+                min-width: 250px;
+                max-width: 95vw !important;
+            }
+
+            .window-content {
+                max-height: 300px;
+                font-size: 11px;
+            }
+
+            .music-player {
+                width: 220px;
+                bottom: 60px;
+                right: 10px;
+            }
+
+            .taskbar {
+                height: 45px;
+                font-size: 10px;
+            }
+
+            .start-button {
+                padding: 4px 8px;
+                font-size: 10px;
+            }
+        }
+
+        /* ===== NEON GLOW ===== */
+        @keyframes glow {
+
+            0%,
+            100% {
+                text-shadow: 0 0 5px #4a5568, 0 0 10px #4a5568;
+            }
+
+            50% {
+                text-shadow: 0 0 10px #718096, 0 0 15px #a0aec0;
+            }
+        }
+
+        .glow-text {
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        .accessibility-skip {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #4a5568;
+            color: #f7fafc;
+            padding: 8px;
+            z-index: 10000;
+        }
+
+        .accessibility-skip:focus {
+            top: 0;
+        }
+
+        #settingsModal {
+            display: none !important;
+            position: fixed;
+            z-index: 1000;
+        }
+
+        #settingsModal.show {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="accessibility-skip">Skip to main content</a>
+
+    <!-- BOOT SEQUENCE -->
+    <div class="boot-screen" id="bootScreen">
+        <div class="boot-text" id="bootText">PORTFOLIO OS v1.0 BOOTING...</div>
+        <div class="boot-bar">
+            <div class="boot-progress"></div>
+        </div>
+    </div>
+
+    <!-- LOADING INTRO -->
+    <div class="laptop-intro" id="laptopIntro">
+        <div class="laptop">
+            <div class="laptop-screen">SYSTEM INITIALIZING...</div>
+            <div class="laptop-base"></div>
+        </div>
+    </div>
+
+    <!-- MAIN DESKTOP -->
+    <div class="desktop" id="desktop" role="main">
+        <!-- DESKTOP ICONS -->
+        <div class="desktop-icons" id="desktopIcons">
+            <div class="desktop-icon" data-window="about" title="About Me">
+                <div class="icon-image"></div>
+                <div class="icon-label">About.exe</div>
+            </div>
+            <div class="desktop-icon" data-window="projects" title="My Projects">
+                <div class="icon-image"></div>
+                <div class="icon-label">Projects.exe</div>
+            </div>
+            <div class="desktop-icon" data-window="contact" title="Contact">
+                <div class="icon-image"></div>
+                <div class="icon-label">Contact.exe</div>
+            </div>
+            <div class="desktop-icon" data-window="game" title="Play Snake">
+                <div class="icon-image"></div>
+                <div class="icon-label">Game.exe</div>
+            </div>
+            <!-- ICONA SPECIALE IN ALTO A DESTRA -->
+            <div class="desktop-icon special-icon" data-window="info" title="Info">
+                <div class="icon-image"></div>
+                <div class="icon-label">ReadMe.txt</div>
+            </div>
+        </div>
+
+        <!-- TASKBAR -->
+        <div class="taskbar" role="status">
+            <button class="start-button">START</button>
+            <div class="taskbar-divider"></div>
+            <div class="taskbar-windows" id="taskbarWindows"></div>
+            <div class="system-tray">
+                <div class="clock" id="clock">12:00 PM</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MUSIC PLAYER -->
+    <div class="music-player" id="musicPlayer">
+        <div class="music-header">♫ MUSIC PLAYER ♫</div>
+        <div class="track-info">
+            <span class="track-title" id="trackName">Loading...</span>
+            <span class="track-artist" id="trackArtist"></span>
+        </div>
+        <div
+            style="width: 100%; height: 4px; background: rgba(113, 128, 150, 0.3); border-radius: 2px; margin: 8px 0; cursor: pointer; position: relative;">
+            <div id="progressBar"
+                style="height: 100%; background: linear-gradient(90deg, #4a5568, #718096); width: 0%; border-radius: 2px; transition: width 0.1s;">
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 9px; color: #a0aec0; margin-bottom: 8px;">
+            <span id="currentTime">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+        <div class="music-controls">
+            <button class="music-btn" id="prevBtn" title="Previous">⏮</button>
+            <button class="music-btn" id="playBtn" title="Play/Pause">▶</button>
+            <button class="music-btn" id="nextBtn" title="Next">⏭</button>
+        </div>
+    </div>
+
+    <audio id="audioPlayer"></audio>
+    <script src="js/ManagerWindow.js"></script>
+    <script src="js/EventHandlerPortfolio.js"></script>
+
+    
+</body>
+
+</html>
