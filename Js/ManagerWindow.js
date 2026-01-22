@@ -44,16 +44,16 @@ const tracks = [
     { name: 'Vaporwave Vibes', artist: 'VaporKing' }
 ];
 const projectData = {
-    'project-01': {
+    'project-01': {                 //Cambiare questo testo per poter cambiare testo nella Taskbar
         style: {
             color: "#00ffff",
             textColor: "",
         },
-        title: 'Modern design system with responsive components and accessibility features',
+        title: 'AGRIVOLT',
         date: 'N.A.',
         location: 'N.A.',
         resume: 'Questo progetto',
-        brief: 'An innovative company that combines agriculture and photovoltaics with sustainable agrivoltaic solutions, enhancing energy and crops.',
+        brief: 'CIAO',
         tools: 'Adobe Illustrator',
         link: 'https://design-system-demo.com',
         gallery: [
@@ -155,13 +155,13 @@ function createWindow(type) {
                 </div>
                 <div class="window-content">
                     <div style="border-bottom: 1px solid #718096; padding-bottom: 10px; margin-bottom: 15px;">
-                        <h3 style="color: #cbd5e0; margin-bottom: 8px; font-size: 14px;">${project.title}</h3>
+                        <!-- <h3 style="color: #cbd5e0; margin-bottom: 8px; font-size: 14px;">${project.title}</h3> -->
                         <div style="font-size: 10px; color: #a0aec0; margin-top: 5px; display: flex; gap: 40px;">
-                            <span><strong>📍 LUOGO:</strong> ${project.location}</span>
-                            <span><strong>📅 DATA:</strong> ${project.date}</span>
+                            <span><strong>LUOGO:</strong> ${project.location}</span>
+                            <span><strong>DATA:</strong> ${project.date}</span>
                         </div>
                         <div style="font-size: 10px; color: #a0aec0; margin-top: 5px;">
-                            <strong>Sunto:</strong> ${project.resume}
+                            <strong>SUNTO:</strong> ${project.resume}
                         </div>
                     </div>
 
@@ -230,7 +230,7 @@ function createWindow(type) {
                     </p>
 
                     <div style="font-size: 13px; margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
-                        <button onclick="openPDFViewer('CV Grieco Gennaro.pdf', '📄 CV.pdf')" 
+                        <button onclick="openPDFViewer('CV Grieco Gennaro.pdf', 'CV Grieco Gennaro.pdf')" 
                         style="display: inline-block; padding: 8px 16px; background: #4a5568; color: #f7fafc; 
                         text-decoration: none; font-size: 11px; border: 2px solid #718096; border-radius: 3px; 
                         transition: all 0.2s; cursor: pointer; font-family: Courier New, monospace; font-weight: bold;"
@@ -248,41 +248,70 @@ function createWindow(type) {
                 .map(([projectId, project]) => `
                     <div class="project-folder"
                         data-project="${projectId}"
-                        style="cursor: pointer; padding: 12px; margin-bottom: 10px;
-                                background: rgba(113, 128, 150, 0.2);
-                                border: 1px solid #718096;
-                                border-radius: 4px;
-                                transition: all 0.2s;
-                                user-select: none;">
+                        style="
+                        display: flex; 
+                        flex-direction: column; 
+                        align-items: 
+                        center; gap: 8px; 
+                        cursor: pointer; 
+                        padding: 12px; margin-bottom: 15px;
+                        background: transparent;
+                        border: none;
+                        border-radius: 4px;
+                        transition: all 0.3s;
+                        user-select: none;"
+                        onmouseover="this.style.background='rgba(113, 128, 150, 0.2)'; 
+                        this.style.transform='scale(1.05)'"
+                        onmouseout="this.style.background='transparent'; 
+                        this.style.transform='scale(1)'"
+                        onclick="openProjectDetails('${projectId}')">
                         
-                        <strong style="color: ${project.style.color};">
+                        <!-- CARTELLA VISIVA -->
+                        <div style="
+                        width: 75px; 
+                        height: 55px;
+                        background: linear-gradient(135deg, ${project.style.color}, ${project.style.color}80); 
+                        border: 2px solid ${project.style.color}; 
+                        border-radius: 3px; 
+                        display: flex; 
+                        align-items: center; 
+                        justify-content: center; 
+                        position: relative; 
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+
+                        <!-- TAB DELLA CARTELLA -->
+                        <div style="position: absolute; top: -12px; left: 8px; width: 40px; height: 15px; 
+                            background: linear-gradient(135deg, ${project.style.color}, ${project.style.color}80); 
+                            border: 2px solid ${project.style.color}; border-bottom: none; border-radius: 3px 3px 0 0;"></div>
+                        </div>
+                        
+                        <!-- NOME PROGETTO -->
+                        <strong style="color: ${project.style.color}; font-size: 11px; text-align: center; max-width: 90px; word-wrap: break-word;">
                             ${project.title}
                         </strong>
-
-                        <br>${project.category ?? "[Brand Identity]"}
-
-                        ${project.brief ? `
-                            <p style="margin: 5px 0; font-size: 10px; color: #a0aec0;">
-                                ${project.brief}
-                            </p>
-                        ` : ""}
+                        
+                        <!-- CATEGORIA -->
+                        <span style="font-size: 9px; color: #a0aec0; text-align: center;">
+                            ${project.category ?? "[Brand Identity]"}
+                        </span>
                     </div>
                 `)
                 .join("");
             content = `
                 <div class="window-header">
-                        <span class="window-title">${translations[state.currentLanguage].projects.title}</span>
-                        <div class="window-controls">
+                    <span class="window-title">${translations[state.currentLanguage].projects.title}</span>
+                    <div class="window-controls">
                         <button class="window-btn">_</button>
                         <button class="window-btn">□</button>
                         <button class="window-btn close" data-close="${type}">✕</button>
                     </div>
                 </div>
-                <div class="window-content">
+                <div class="window-content" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; padding: 20px;">
                     ${projectsHTML}
                 </div>
             `;
             break;
+
         case 'contact':
             content = `
                 <div class="window-header">
@@ -547,6 +576,98 @@ function openPDFViewer(pdfUrl, title) {
         setTimeout(() => {
             windowEl.remove();
             delete state.windows[pdfId];
+        }, 300);
+    });
+}
+
+// ===== PROJECT DETAILS VIEWER =====
+function openProjectDetails(projectId) {
+    const project = projectData[projectId];
+    if (!project) return;
+
+    const detailsId = 'project-details-' + projectId;
+    const galleryHTML = project.gallery ? project.gallery.map((img, idx) => `
+        <div class="gallery-item" data-image="${img}" data-title="${project.title}" 
+             style="flex: 1; min-width: 80px; height: 80px; border: 1px solid #718096; border-radius: 3px; overflow: hidden; cursor: pointer; transition: all 0.2s;" 
+             onmouseover="this.style.opacity=0.8; this.style.boxShadow='0 0 8px rgba(113, 128, 150, 0.5)'" 
+             onmouseout="this.style.opacity=1; this.style.boxShadow='none'"
+             onclick="openImageLightbox('${img}', '${project.title}')">
+            <img src="${img}" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+        </div>
+    `).join('') : '';
+
+    const windowContent = `
+        <div class="window-header">
+            <span class="window-title">📁 ${project.title}</span>
+            <div class="window-controls">
+                <button class="window-btn">_</button>
+                <button class="window-btn">□</button>
+                <button class="window-btn close" data-close="${detailsId}">✕</button>
+            </div>
+        </div>
+        <div class="window-content" style="max-height: 500px; overflow-y: auto;">
+            <div style="margin-bottom: 15px;">
+                <p style="color: #a0aec0; font-size: 10px; margin: 0;"><strong>CATEGORY:</strong> ${project.category}</p>
+                <p style="color: #a0aec0; font-size: 10px; margin: 5px 0 0 0;"><strong>DATE:</strong> ${project.date}</p>
+                <p style="color: #a0aec0; font-size: 10px; margin: 5px 0 0 0;"><strong>LOCATION:</strong> ${project.location}</p>
+            </div>
+
+            <div style="border-top: 1px solid #718096; padding-top: 10px; margin-bottom: 15px;">
+                <p style="color: #cbd5e0; font-size: 11px; line-height: 1.5; margin: 0;">
+                    <strong style="color: #38bdf8;">BRIEF:</strong><br>
+                    ${project.brief}
+                </p>
+            </div>
+
+            <div style="border-top: 1px solid #718096; padding-top: 10px; margin-bottom: 15px;">
+                <p style="color: #a0aec0; font-size: 10px; margin: 0;"><strong>ROLE:</strong> ${project.role}</p>
+                <p style="color: #a0aec0; font-size: 10px; margin: 5px 0 0 0;"><strong>TOOLS:</strong> ${project.tools}</p>
+            </div>
+
+            ${galleryHTML ? `
+                <div style="border-top: 1px solid #718096; padding-top: 10px; margin-bottom: 15px;">
+                    <p style="color: #718096; font-size: 11px; margin: 0 0 10px 0; text-transform: uppercase;"><strong>GALLERY</strong></p>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        ${galleryHTML}
+                    </div>
+                </div>
+            ` : ''}
+
+            <div style="border-top: 1px solid #718096; padding-top: 10px;">
+                <a href="${project.link}" target="_blank" 
+                   style="display: inline-block; padding: 8px 16px; background: #48bb78; color: #1a202c; 
+                   text-decoration: none; font-size: 11px; border-radius: 3px; transition: all 0.2s; 
+                   cursor: pointer; font-weight: bold;"
+                   onmouseover="this.style.boxShadow='0 0 12px rgba(72, 187, 120, 0.6)'" 
+                   onmouseout="this.style.boxShadow='none'">
+                    🔗 VIEW PROJECT
+                </a>
+            </div>
+        </div>
+    `;
+
+    const windowEl = document.createElement('div');
+    windowEl.className = 'window';
+    windowEl.id = detailsId;
+    windowEl.innerHTML = windowContent;
+    windowEl.style.width = '500px';
+    windowEl.style.height = 'auto';
+    windowEl.style.left = `calc(50% - 250px)`;
+    windowEl.style.top = `calc(50% - 200px)`;
+    windowEl.style.zIndex = state.zIndex++;
+
+    document.body.appendChild(windowEl);
+    state.windows[detailsId] = windowEl;
+
+    // Rendi trascinabile
+    makeWindowDraggable(windowEl);
+
+    // Chiudi al click sul bottone X
+    windowEl.querySelector('.window-btn.close').addEventListener('click', () => {
+        windowEl.classList.add('closing');
+        setTimeout(() => {
+            windowEl.remove();
+            delete state.windows[detailsId];
         }, 300);
     });
 }
