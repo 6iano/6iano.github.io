@@ -143,25 +143,28 @@ const projectData = {
     },
     'BACK2BACK': {
         style: {
-            color: "#151515"
+            color: "#3e3e3e"
         },
         title: 'BACK 2 BACK',
         //category: 'Web Development',
         date: 'N.A.',
         location: 'N.A.',
         brief: 'Caratterizzato da un’identità stilistica unica, il marchio si rivolge a chi vede nella moda una forma d’arte e uno strumento di espressione personale nel contesto urbano. Il brand si distacca dalle logiche di massa per concentrarsi sullo sviluppo di collezioni d’avanguardia, capaci di coniugare innovazione tecnica e sostenibilità ambientale. L’impegno verso la propria community si riflette in una filiera trasparente che valorizza rigorosamente il Made in Italy, garantendo standard qualitativi elevati e un impatto sociale positivo.',
-        role: 'Realizzare una Brand Identity & landing page',
+        role: 'Realizzare una Brand Identity + Landing Page',
         tools: 'Figma - Adobe Illustrator',
         //link: 'https://ecommerce-platform-demo.com',
         gallery: [
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/1.jpg', // Immagine 1
-            'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop', // Immagine 2
-            'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop'    //Immagine 3
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/2.jpg', // Immagine 2
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/3.jpg',  //Immagine 3
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/4.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/5.png',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/6.jpg'
         ]
     },
-    'project-03': {
+    'OIKA': {
         style: {
-            color: "#ff00ff"
+            color: "#f94848"
         },
         title: '3D Web Experience',
         category: '3D & Interactive',
@@ -218,7 +221,7 @@ function createWindow(type) {
     switch (type) {
         case 'AGRIVOLT':
         case 'BACK2BACK':
-        case 'project-03':
+        case 'OIKA':
         case 'project-04':
             
             // Project window with full structure
