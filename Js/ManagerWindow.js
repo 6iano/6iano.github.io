@@ -143,7 +143,7 @@ const projectData = {
     },
     'BACK2BACK': {
         style: {
-            color: "#3e3e3e"
+            color: "#949494"
         },
         title: 'BACK 2 BACK',
         //category: 'Web Development',
@@ -156,7 +156,7 @@ const projectData = {
         gallery: [
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/1.jpg', // Immagine 1
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/2.jpg', // Immagine 2
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/3.jpg',  //Immagine 3
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/3.jpg', // Immagine 3
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/4.jpg',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/5.png',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/6.jpg'
@@ -166,18 +166,21 @@ const projectData = {
         style: {
             color: "#f94848"
         },
-        title: '3D Web Experience',
-        category: '3D & Interactive',
-        date: 'May 2024',
-        location: 'Collaborative',
-        brief: 'Interactive 3D visualization platform showcasing product models with real-time rendering. Users can rotate, zoom, and customize products in 3D space.',
-        role: '3D Artist & Web Developer',
-        tools: 'Three.js, Blender, WebGL, React Three Fiber',
+        title: 'OIKA',
+        //category: '3D & Interactive',
+        date: 'Marzo 2025 - Giugno 2025',
+        location: 'Napoli',
+        brief: 'Oika is a navigation aid designed for blind and visually impaired person to move safely in open, unstructured environments where traditional navigation tools fall short',
+        role: 'Helps people with visual impairments who want to feel more indipendent by guiding them to a saved location in open spaces ',
+        tools: 'Procreate, Adobe Illustrator, Figma',
         link: 'https://3d-experience-demo.com',
         gallery: [
-            'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop', // Immagine 1
-            'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop', // Immagine 2
-            'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop'    //Immagine 3
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/1.png', // Immagine 1
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/2.jpg', // Immagine 2
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/3.jpg', // Immagine 3
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/4.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/5.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/6.jpg'
         ]
     },
     'project-04': {
