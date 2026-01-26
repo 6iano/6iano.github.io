@@ -53,11 +53,11 @@ const translations = {
             //download: '📥 DOWNLOAD CV' 
         },
         icons: { 
-            about: 'About', 
-            projects: 'Projects', 
-            contact: 'Contact', 
-            game: 'Game', 
-            info: 'ReadMe.txt' 
+            about: 'ABOUT ME', 
+            projects: 'PROJECTS', 
+            contact: 'CONTACTS', 
+            game: 'GAME', 
+            info: 'README.txt' 
         }
     },
     it: {
@@ -102,11 +102,11 @@ const translations = {
             download: '📥 DOWNLOAD CV' 
         },
         icons: { 
-            about: 'Chi Sono', 
-            projects: 'Progetti', 
-            contact: 'Contatti', 
-            game: 'Game', 
-            info: 'Leggimi.txt' 
+            about: 'ABOUT ME', 
+            projects: 'PROGETTI', 
+            contact: 'CONTATTI', 
+            game: 'GAME', 
+            info: 'LEGGIMI.txt' 
         }
     }
 };
@@ -117,8 +117,9 @@ const tracks = [
     { name: 'Digital Paradise', artist: 'SynthMaster' },
     { name: 'Vaporwave Vibes', artist: 'VaporKing' }
 ];
+
 const projectData = {
-    'project-01': {                 //Cambiare questo testo per poter cambiare testo nella Taskbar
+    'AGRIVOLT': {                 //Cambiare questo testo per poter cambiare testo nella Taskbar
         style: {
             color: "#00ffff",
             textColor: "",
@@ -502,6 +503,9 @@ function createWindow(type) {
     // Make window draggable
     makeWindowDraggable(windowEl);
 
+    // Make window resizable
+    makeWindowResizable(windowEl);
+
     // Initialize game if needed
     if (type === 'game') {
         initSnakeGame();
@@ -551,6 +555,56 @@ function makeWindowDraggable(windowEl) {
         document.removeEventListener('mouseup', closeDragElement);
     }
 }
+
+function makeWindowResizable(windowEl) {
+  const handle = document.createElement('div');
+  handle.className = 'resize-handle';
+  windowEl.appendChild(handle);
+
+  let startX = 0, startY = 0, startW = 0, startH = 0;
+
+  handle.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const rect = windowEl.getBoundingClientRect();
+
+    // Forza dimensioni esplicite (se era "auto")
+    windowEl.style.width = rect.width + 'px';
+    windowEl.style.height = rect.height + 'px';
+
+    startX = e.clientX;
+    startY = e.clientY;
+    startW = rect.width;
+    startH = rect.height;
+
+    document.addEventListener('mousemove', doResize);
+    document.addEventListener('mouseup', stopResize);
+  });
+
+  function doResize(e) {
+    const dx = e.clientX - startX;
+    const dy = e.clientY - startY;
+
+    const minW = 300;  // coerente col tuo CSS
+    const minH = 180;
+
+    const maxW = window.innerWidth * 0.9;
+    const maxH = window.innerHeight * 0.9;
+
+    const newW = Math.min(Math.max(startW + dx, minW), maxW);
+    const newH = Math.min(Math.max(startH + dy, minH), maxH);
+
+    windowEl.style.width = newW + 'px';
+    windowEl.style.height = newH + 'px';
+  }
+
+  function stopResize() {
+    document.removeEventListener('mousemove', doResize);
+    document.removeEventListener('mouseup', stopResize);
+  }
+}
+
 
 function addToTaskbar(type) {
     const taskbarWindows = document.getElementById('taskbarWindows');
