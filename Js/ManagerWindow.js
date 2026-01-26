@@ -23,7 +23,8 @@ const translations = {
         },
         projects: { 
             title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Projects',
-            description: 'Modern design system with responsive components and accessibility features.' 
+            description: 'Modern design system with responsive components and accessibility features.',
+            tools: 'Ciao'
         },
         contact: { 
             title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contact', 
@@ -72,7 +73,8 @@ const translations = {
         },
         projects: { 
             title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Progetti', 
-            description: 'Sistema di design moderno con componenti responsive e funzioni di accessibilità.' 
+            description: 'Sistema di design moderno con componenti responsive e funzioni di accessibilità.',
+            tools: 'Groda'
         },
         contact: { 
             title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contatti', 
@@ -118,19 +120,20 @@ const tracks = [
     { name: 'Vaporwave Vibes', artist: 'VaporKing' }
 ];
 
+//Per poter cambiare nome nella Taskbar, cambiare sia nome qui che in ogni 'case' sotto
 const projectData = {
-    'AGRIVOLT': {                 //Cambiare questo testo per poter cambiare testo nella Taskbar
+    'AGRIVOLT': {
         style: {
-            color: "#00ffff",
-            textColor: "",
+            color: "#269980",
         },
         title: 'AGRIVOLT',
         date: 'N.A.',
         location: 'N.A.',
-        resume: 'Questo progetto',
-        brief: 'CIAO',
+        //resume: '',
+        brief: 'Azienda che coniuga agricoltura e fotovoltaico attraverso sistemi agrivoltaici avanzati. Trasforano la sinergia tra sole e natura in valore concreto per l’ambiente e per il settore agricolo.',
+        role: 'Realizzare una Brand Identity',
         tools: 'Adobe Illustrator',
-        link: 'https://design-system-demo.com',
+        //link: 'https://design-system-demo.com',
         gallery: [
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/1.png', // Immagine 1
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/2.png', // Immagine 2
@@ -138,20 +141,20 @@ const projectData = {
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/4.png'
         ]
     },
-    'project-02': {
+    'BACK2BACK': {
         style: {
-            color: "#ffff00"
+            color: "#151515"
         },
-        title: 'E-Commerce Platform',
-        category: 'Web Development',
-        date: 'March 2024',
-        location: 'Italy',
-        brief: 'Full-stack e-commerce application with real-time inventory management, payment processing, and analytics dashboard. Supports multiple currencies and languages.',
-        role: 'Full Stack Developer',
-        tools: 'React, Node.js, MongoDB, Stripe, Redux',
-        link: 'https://ecommerce-platform-demo.com',
+        title: 'BACK 2 BACK',
+        //category: 'Web Development',
+        date: 'N.A.',
+        location: 'N.A.',
+        brief: 'Caratterizzato da un’identità stilistica unica, il marchio si rivolge a chi vede nella moda una forma d’arte e uno strumento di espressione personale nel contesto urbano. Il brand si distacca dalle logiche di massa per concentrarsi sullo sviluppo di collezioni d’avanguardia, capaci di coniugare innovazione tecnica e sostenibilità ambientale. L’impegno verso la propria community si riflette in una filiera trasparente che valorizza rigorosamente il Made in Italy, garantendo standard qualitativi elevati e un impatto sociale positivo.',
+        role: 'Realizzare una Brand Identity & landing page',
+        tools: 'Figma - Adobe Illustrator',
+        //link: 'https://ecommerce-platform-demo.com',
         gallery: [
-            'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop', // Immagine 1
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/1.jpg', // Immagine 1
             'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop', // Immagine 2
             'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop'    //Immagine 3
         ]
@@ -213,10 +216,11 @@ function createWindow(type) {
 
     let content = '';
     switch (type) {
-        case 'project-01':
-        case 'project-02':
+        case 'AGRIVOLT':
+        case 'BACK2BACK':
         case 'project-03':
         case 'project-04':
+            
             // Project window with full structure
             const project = projectData[type];
             content = `
@@ -235,31 +239,31 @@ function createWindow(type) {
                             <span><strong>LUOGO:</strong> ${project.location}</span>
                             <span><strong>DATA:</strong> ${project.date}</span>
                         </div>
-                        <div style="font-size: 10px; color: #a0aec0; margin-top: 5px;">
+                        <!-- <div style="font-size: 10px; color: #a0aec0; margin-top: 5px;">
                             <strong>SUNTO:</strong> ${project.resume}
-                        </div>
+                        </div> -->
                     </div>
 
                     <div style="margin-bottom: 15px;">
-                        <h4 style="color: #F08000; font-size: 11px; margin-bottom: 6px; text-transform: uppercase;">BRIEF</h4>
+                        <h4 style="color: #718096; font-size: 11px; margin-bottom: 6px; text-transform: uppercase;">BRIEF</h4>
                         <p style="font-size: 11px; color: #cbd5e0; line-height: 1.5;">${project.brief}</p>
                     </div>
 
                     <div style="margin-bottom: 15px;">
-                        <h4 style="color: #718096; font-size: 11px; margin-bottom: 6px; text-transform: uppercase;">RUOLO</h4>
+                        <h4 style="color: #718096; font-size: 11px; margin-bottom: 6px; text-transform: uppercase;">OBIETTIVO</h4>
                         <p style="font-size: 11px; color: #cbd5e0;">${project.role}</p>
                     </div>
 
                     <div style="margin-bottom: 15px;">
-                        <h4 style="color: #718096; font-size: 11px; margin-bottom: 6px; text-transform: uppercase;">TECNOLOGIE</h4>
+                        <h4 style="color: #718096; font-size: 11px; margin-bottom: 6px; text-transform: uppercase;">SOFTWARE</h4>
                         <p style="font-size: 11px; color: #cbd5e0;">${project.tools}</p>
                     </div>
 
-                    <div style="padding-top: 10px; border-top: 1px solid #718096;">
+                    <!-- <div style="padding-top: 10px; border-top: 1px solid #718096;">
                         <a href="${project.link}" target="_blank" style="display: inline-block; padding: 6px 12px; background: #4a5568; color: #f7fafc; text-decoration: none; font-size: 10px; border-radius: 3px; transition: all 0.2s; cursor: pointer;" onmouseover="this.style.background='#718096'; this.style.boxShadow='0 0 8px rgba(113, 128, 150, 0.5)'" onmouseout="this.style.background='#4a5568'; this.style.boxShadow='none'">
                             🔗 VISITA PROGETTO
                         </a>
-                    </div>
+                    </div> -->
 
                     <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
                         <h4 style="color: #718096; font-size: 11px; margin-bottom: 8px; text-transform: uppercase;">GALLERY</h4>
@@ -289,7 +293,7 @@ function createWindow(type) {
                     </div>
                 </div>
                 <div class="window-content">
-                    <p><strong style="color: #e58f34;">COSE DA SAPERE SU DI ME</strong></p>
+                    <p><strong style="color: #F08000;">COSE DA SAPERE SU DI ME</strong></p>
                     <p style="margin-top: 10px;">
                         Mi chiamo Gennaro, in arte Giano, ho 26 anni e vengo da Napoli, cosa che, dal nome, si intuisce abbastanza facilmente. 
                         </br>
