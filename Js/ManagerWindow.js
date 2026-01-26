@@ -13,7 +13,87 @@ const state = {
 const translations = {
     en: {
         about: { 
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">About', 
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">About' 
+            //role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
+            //intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', 
+            //exp: '💼 EXPERIENCES', 
+            //form: '🎓 FORMATION', 
+            //skills: '⚡ SKILLS', 
+            //download: '📥 DOWNLOAD CV' 
+        },
+        projects: { 
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Projects',
+            description: 'Modern design system with responsive components and accessibility features.' 
+        },
+        contact: { 
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contact', 
+            getInTouch: 'GET IN TOUCH', 
+            location: '📍 Location: Santa Maria Capua Vetere, Campania, Italy', 
+            email: '✉️ Email:', 
+            linkedin: '💼 LinkedIn:', 
+            github: '🐙 GitHub:', 
+            website: '🌐 Website:', 
+            sendMessage: '✉️ SEND MESSAGE', 
+            yourName: 'Your Name:', 
+            yourEmail: 'Your Email:', 
+            subject: 'Subject:', 
+            message: 'Message:', 
+            sendBtn: '📤 SEND EMAIL' 
+        },
+        game: { 
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake' 
+        },
+        info: { 
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">ReadMe.txt' 
+            //role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
+            //intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', 
+            //exp: '💼 EXPERIENCES', 
+            //form: '🎓 FORMATION', 
+            //skills: '⚡ SKILLS', 
+            //download: '📥 DOWNLOAD CV' 
+        },
+        icons: { 
+            about: 'About', 
+            projects: 'Projects', 
+            contact: 'Contact', 
+            game: 'Game', 
+            info: 'ReadMe.txt' 
+        }
+    },
+    it: {
+        about: { 
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Chi Sono' 
+            //role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
+            //intro: 'Specializzato in UI/UX Design, Modellazione 3D ed Esperienze Web Interattive. Basato a Santa Maria Capua Vetere, Italia.', 
+            //exp: '💼 ESPERIENZE', 
+            //form: '🎓 FORMAZIONE', 
+            //skills: '⚡ COMPETENZE', 
+            //download: '📥 SCARICA CV' 
+        },
+        projects: { 
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Progetti', 
+            description: 'Sistema di design moderno con componenti responsive e funzioni di accessibilità.' 
+        },
+        contact: { 
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contatti', 
+            getInTouch: 'CONTATTAMI', 
+            location: '📍 Ubicazione: Santa Maria Capua Vetere, Campania, Italia', 
+            email: '✉️ Email:', 
+            linkedin: '💼 LinkedIn:', 
+            github: '🐙 GitHub:', 
+            website: '🌐 Sito:', 
+            sendMessage: '✉️ INVIA MESSAGGIO', 
+            yourName: 'Il Tuo Nome:', 
+            yourEmail: 'La Tua Email:', 
+            subject: 'Oggetto:', 
+            message: 'Messaggio:', 
+            sendBtn: '📤 INVIA EMAIL' 
+        },
+        game: { 
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake' 
+        },
+        info: { 
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Leggimi.txt', 
             role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
             intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', 
             exp: '💼 EXPERIENCES', 
@@ -21,19 +101,13 @@ const translations = {
             skills: '⚡ SKILLS', 
             download: '📥 DOWNLOAD CV' 
         },
-        projects: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Projects', description: 'Modern design system with responsive components and accessibility features.' },
-        contact: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contact', getInTouch: 'GET IN TOUCH', location: '📍 Location: Santa Maria Capua Vetere, Campania, Italy', email: '✉️ Email:', linkedin: '💼 LinkedIn:', github: '🐙 GitHub:', website: '🌐 Website:', sendMessage: '✉️ SEND MESSAGE', yourName: 'Your Name:', yourEmail: 'Your Email:', subject: 'Subject:', message: 'Message:', sendBtn: '📤 SEND EMAIL' },
-        game: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake' },
-        info: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">ReadMe.txt', role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', exp: '💼 EXPERIENCES', form: '🎓 FORMATION', skills: '⚡ SKILLS', download: '📥 DOWNLOAD CV' },
-        icons: { about: 'About', projects: 'Projects', contact: 'Contact', game: 'Game', info: 'ReadMe.txt' }
-    },
-    it: {
-        about: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Chi Sono', role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', intro: 'Specializzato in UI/UX Design, Modellazione 3D ed Esperienze Web Interattive. Basato a Santa Maria Capua Vetere, Italia.', exp: '💼 ESPERIENZE', form: '🎓 FORMAZIONE', skills: '⚡ COMPETENZE', download: '📥 SCARICA CV' },
-        projects: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Progetti', description: 'Sistema di design moderno con componenti responsive e funzioni di accessibilità.' },
-        contact: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contatti', getInTouch: 'CONTATTAMI', location: '📍 Ubicazione: Santa Maria Capua Vetere, Campania, Italia', email: '✉️ Email:', linkedin: '💼 LinkedIn:', github: '🐙 GitHub:', website: '🌐 Sito:', sendMessage: '✉️ INVIA MESSAGGIO', yourName: 'Il Tuo Nome:', yourEmail: 'La Tua Email:', subject: 'Oggetto:', message: 'Messaggio:', sendBtn: '📤 INVIA EMAIL' },
-        game: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake' },
-        info: { title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Leggimi.txt', role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', exp: '💼 EXPERIENCES', form: '🎓 FORMATION', skills: '⚡ SKILLS', download: '📥 DOWNLOAD CV' },
-        icons: { about: 'Chi Sono', projects: 'Progetti', contact: 'Contatti', game: 'Game', info: 'Leggimi.txt' }
+        icons: { 
+            about: 'Chi Sono', 
+            projects: 'Progetti', 
+            contact: 'Contatti', 
+            game: 'Game', 
+            info: 'Leggimi.txt' 
+        }
     }
 };
 
@@ -146,7 +220,7 @@ function createWindow(type) {
             const project = projectData[type];
             content = `
                 <div class="window-header">
-                    <span class="window-title">${project.title}</span>
+                    <span class="window-title">📁 ${project.title}</span>
                     <div class="window-controls">
                         <button class="window-btn">_</button>
                         <button class="window-btn">□</button>
@@ -166,7 +240,7 @@ function createWindow(type) {
                     </div>
 
                     <div style="margin-bottom: 15px;">
-                        <h4 style="color: #718096; font-size: 11px; margin-bottom: 6px; text-transform: uppercase;">BRIEF</h4>
+                        <h4 style="color: #F08000; font-size: 11px; margin-bottom: 6px; text-transform: uppercase;">BRIEF</h4>
                         <p style="font-size: 11px; color: #cbd5e0; line-height: 1.5;">${project.brief}</p>
                     </div>
 
@@ -280,7 +354,7 @@ function createWindow(type) {
                         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
 
                         <!-- TAB DELLA CARTELLA -->
-                        <div style="position: absolute; top: -12px; left: 8px; width: 40px; height: 15px; 
+                        <div style="position: absolute; top: -12px; left: 8px; width: 40px; height: 12px; 
                             background: linear-gradient(135deg, ${project.style.color}, ${project.style.color}80); 
                             border: 2px solid ${project.style.color}; border-bottom: none; border-radius: 3px 3px 0 0;"></div>
                         </div>
@@ -392,15 +466,20 @@ function createWindow(type) {
             </div>
         </div>
         <div class="window-content">
-            <h2 style="color: #00ffff; margin-bottom: 15px;">👋 BENVENUTO!</h2>
-            <p style="font-size: 14px; line-height: 1.6; color: #cbd5e0;">
+            <h2 style="color: #F08000; margin-bottom: 15px;">👋 BENVENUTO!</h2>
+            <p style="font-size: 14px; line-height: 1.6; color: #cbd5e0; letter-spacing: 0px;">
                 Grazie per aver visitato il mio portfolio.<br>
-                Questo sito simula un sistema operativo retrò.<br><br>
+                Il sito simula un sistema operativo un po' retrò.<br><br>
                 <strong>Clicca sulle icone</strong> per esplorare i miei progetti,<br>
-                ascoltare musica o giocare a Snake!
+                ascoltare musica o giocare a Snake!<br><br>
+                Il sito è attualmente non e' completo al 100%.<br>
+                Questo significa che potresti incontrare funzionalità incomplete, o comportamenti imprevisti.
+                Se dovessi riscontrare errori o malfunzionamenti, ti sarei grato se potessi segnalarmeli.<br>
+                Puoi inviare una mail con i dettagli del problema alla mail che trovi in "Contatti"<br><br>
+                <strong>CREDITS:</strong><br>
             </p>
             <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #718096;">
-                <p style="font-size: 11px; color: #a0aec0;">v1.0 - Created by Me</p>
+                <p style="font-size: 11px; color: #a0aec0;">v1.0 - Made with love and a lot of coffee</p>
             </div>
         </div>
     `;
@@ -596,6 +675,7 @@ function openProjectDetails(projectId) {
         </div>
     `).join('') : '';
 
+    /* Questo blocco di codice, apre un altra schermata quando si clicca su un progetto
     const windowContent = `
         <div class="window-header">
             <span class="window-title">📁 ${project.title}</span>
@@ -633,7 +713,7 @@ function openProjectDetails(projectId) {
                 </div>
             ` : ''}
 
-            <div style="border-top: 1px solid #718096; padding-top: 10px;">
+           <div style="border-top: 1px solid #718096; padding-top: 10px;">
                 <a href="${project.link}" target="_blank" 
                    style="display: inline-block; padding: 8px 16px; background: #48bb78; color: #1a202c; 
                    text-decoration: none; font-size: 11px; border-radius: 3px; transition: all 0.2s; 
@@ -644,7 +724,7 @@ function openProjectDetails(projectId) {
                 </a>
             </div>
         </div>
-    `;
+    `; */
 
     const windowEl = document.createElement('div');
     windowEl.className = 'window';
