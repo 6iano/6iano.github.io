@@ -231,12 +231,33 @@ const projectData = {
         //link: 'Vecchio sito: https://panafgeo.eurogeosurveys.org/',
         gallery: [
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/1.png',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/2.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/2.png',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/3.jpg',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/4.jpg',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/5.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/6.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/7.jpg'
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/7.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/6.jpg'
+        ]
+    },
+    'FERMA ESG Toolbox': {
+        style: {
+            color: "#5d9660"
+        },
+        title: 'FERMA ESG Toolbox',
+        //category: 'AI Integration',
+        date: 'Agosto 2025 - Dicembre 2025',
+        location: 'Bruxelles, BE',
+        brief: 'voluzione dell’identità visiva e sviluppo editoriale per lo strumento europeo di gestione dei rischi ESG.',
+        role: 'Realizzare l’intera produzione della brochure tecnica, gestendo l’impaginazione dei contenuti e lo studio grafico dei piatti di copertina (1ª e 4ª). Il risultato è un’immagine istituzionale solida che armonizza la presenza online e offline, posizionando il Toolbox come una risorsa indispensabile per la rendicontazione non finanziaria e la cultura della sostenibilità nel panorama corporate.',
+        tools: 'Adobe Illustrator, Adobe Photoshop, AI',
+        //link: 'Vecchio sito: https://panafgeo.eurogeosurveys.org/',
+        gallery: [
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/1.png',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/2.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/3.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/4.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/5.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/6.jpg'
         ]
     }
 };
@@ -265,6 +286,7 @@ function createWindow(type) {
         case 'OIKA':
         case 'PanAfGeo+':
         case 'FERMA Forum 2026':
+        case 'FERMA ESG Toolbox':
             
             // Project window with full structure
             const project = projectData[type];
