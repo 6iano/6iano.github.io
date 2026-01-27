@@ -183,22 +183,32 @@ const projectData = {
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/6.jpg'
         ]
     },
-    'project-04': {
+    'PanAfGeo+': {
         style: {
-            color: "#48bb78"
+            color: "#e9d158"
         },
-        title: 'AI-Powered Design Tool',
-        category: 'AI Integration',
-        date: 'August 2024',
-        location: 'Remote',
-        brief: 'Smart design tool powered by generative AI that suggests layouts, color schemes, and typography automatically. Features real-time collaboration and version control.',
-        role: 'AI Integration Specialist',
-        tools: 'OpenAI API, React, Python, PostgreSQL',
-        link: 'https://ai-design-tool-demo.com',
+        title: 'PanAfGeo+',
+        //category: 'AI Integration',
+        date: 'Agosto 2025 - Dicembre 2025',
+        location: 'Bruxelles, BE',
+        brief: 'Iniziativa di rilevanza internazionale dedicata alla valorizzazione agronomica del suolo africano. L’incarico ha previsto un intervento strutturale di restyling della landing page e la definizione di una nuova brand identity coordinata. Il progetto si è esteso alla progettazione e allo sviluppo di materiali promozionali e merchandising istituzionale destinati ai cicli di conferenze internazionali.  ',
+        role: 'Obiettivo era quello di sviluppare un identità visiva che fosse distintiva e memorabile, nel pieno rispetto dei requisiti dati.',
+        tools: 'Figma, Adobe Illustrator, AI',
+        link: 'Vecchio sito: https://panafgeo.eurogeosurveys.org/',
         gallery: [
-            'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop', // Immagine 1
-            'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop', // Immagine 2
-            'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop'    //Immagine 3
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/1.png',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/2.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/3.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/4.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/5.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/6.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/7.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/8.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/9.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/10.png',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/11.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/12.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/13.jpg'
         ]
     }
 };
@@ -225,7 +235,7 @@ function createWindow(type) {
         case 'AGRIVOLT':
         case 'BACK2BACK':
         case 'OIKA':
-        case 'project-04':
+        case 'PanAfGeo+':
             
             // Project window with full structure
             const project = projectData[type];
