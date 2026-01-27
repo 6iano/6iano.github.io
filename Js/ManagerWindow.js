@@ -247,7 +247,7 @@ const projectData = {
         //category: 'AI Integration',
         date: 'Agosto 2025 - Dicembre 2025',
         location: 'Bruxelles, BE',
-        brief: 'voluzione dell’identità visiva e sviluppo editoriale per lo strumento europeo di gestione dei rischi ESG.',
+        brief: 'Evoluzione dell’identità visiva e sviluppo editoriale per lo strumento europeo di gestione dei rischi ESG.',
         role: 'Realizzare l’intera produzione della brochure tecnica, gestendo l’impaginazione dei contenuti e lo studio grafico dei piatti di copertina (1ª e 4ª). Il risultato è un’immagine istituzionale solida che armonizza la presenza online e offline, posizionando il Toolbox come una risorsa indispensabile per la rendicontazione non finanziaria e la cultura della sostenibilità nel panorama corporate.',
         tools: 'Adobe Illustrator, Adobe Photoshop, AI',
         //link: 'Vecchio sito: https://panafgeo.eurogeosurveys.org/',
@@ -258,6 +258,28 @@ const projectData = {
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/4.jpg',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/5.jpg',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/6.jpg'
+        ]
+    },
+    'URBAN KONG': {
+        style: {
+            color: "#d58324"
+        },
+        title: 'URBAN KONG',
+        //category: 'AI Integration',
+        date: 'Agosto 2025 - Dicembre 2025',
+        location: 'Bruxelles, BE',
+        brief: 'Sviluppo dell’identità visiva e ottimizzazione dei sistemi di vendita per il brand Urban Kong.',
+        role: 'L’attività ha coniugato design creativo e gestione tecnica dei processi di vendita. Progettazione del nuovo logo e creazione grafiche per i vari prodotti, inoltre il lavoro si è concentrato sulla massimizzazione delle potenzialità della piattaforma Shopify. Attraverso l’implementazione di flussi avanzati su Klaviyo, è stata potenziata la gestione della comunicazione con i clienti.',
+        tools: 'Adobe Illustrator, Adobe Photoshop, AI, Figma',
+        link: 'https://urban-kong.com/',
+        gallery: [
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/1.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/2.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/3.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/4.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/5.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/6.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/7.jpg'
         ]
     }
 };
@@ -287,6 +309,7 @@ function createWindow(type) {
         case 'PanAfGeo+':
         case 'FERMA Forum 2026':
         case 'FERMA ESG Toolbox':
+        case 'URBAN KONG':
             
             // Project window with full structure
             const project = projectData[type];
@@ -323,11 +346,11 @@ function createWindow(type) {
                         <p style="font-size: 11px; color: #cbd5e0;">${project.tools}</p>
                     </div>
 
-                    <!-- <div style="padding-top: 10px; border-top: 1px solid #718096;">
+                    <div style="padding-top: 10px; border-top: 1px solid #718096;">
                         <a href="${project.link}" target="_blank" style="display: inline-block; padding: 6px 12px; background: #4a5568; color: #f7fafc; text-decoration: none; font-size: 10px; border-radius: 3px; transition: all 0.2s; cursor: pointer;" onmouseover="this.style.background='#718096'; this.style.boxShadow='0 0 8px rgba(113, 128, 150, 0.5)'" onmouseout="this.style.background='#4a5568'; this.style.boxShadow='none'">
-                            🔗 VISITA PROGETTO
+                            VISITA IL SITO
                         </a>
-                    </div> -->
+                    </div>
 
                     <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
                         <h4 style="color: #718096; font-size: 11px; margin-bottom: 8px; text-transform: uppercase;">GALLERY</h4>
