@@ -45,7 +45,7 @@ const translations = {
             title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake' 
         },
         info: { 
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">ReadMe.txt' 
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">README.txt' 
             //role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
             //intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', 
             //exp: '💼 EXPERIENCES', 
@@ -130,15 +130,21 @@ const projectData = {
         date: 'N.A.',
         location: 'N.A.',
         //resume: '',
-        brief: 'Azienda che coniuga agricoltura e fotovoltaico attraverso sistemi agrivoltaici avanzati. Trasforano la sinergia tra sole e natura in valore concreto per l’ambiente e per il settore agricolo.',
-        role: 'Realizzare una Brand Identity',
+        brief: 'Agrivolt è una realtà innovativa specializzata in sistemi agrivoltaici che armonizzano produzione energetica e agricoltura sostenibile. Attraverso l’impiego di strutture sopraelevate, l’azienda ottimizza l’uso del suolo garantendo la perfetta coesistenza tra tecnologia e colture.',
+        role: 'Sviluppare un’identità visiva distintiva che posizioni Agrivolt come leader nell’innovazione agrivoltaica',
         tools: 'Adobe Illustrator',
         //link: 'https://design-system-demo.com',
         gallery: [
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/1.png', // Immagine 1
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/2.png', // Immagine 2
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/3.png', // Immagine 3
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/4.png'
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/1.jpg', // Immagine 1
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/2.jpg', // Immagine 2
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/3.jpg', // Immagine 3
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/4.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/5.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/6.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/7.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/8.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/9.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/10.jpg'
         ]
     },
     'BACK2BACK': {
@@ -210,6 +216,34 @@ const projectData = {
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/12.jpg',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/13.jpg'
         ]
+    },
+    'FERMA Forum 2026': {
+        style: {
+            color: "#659bdd"
+        },
+        title: 'FERMA Forum 2026',
+        //category: 'AI Integration',
+        date: 'Agosto 2025 - Dicembre 2025',
+        location: 'Bruxelles, BE',
+        brief: 'Iniziativa di rilevanza internazionale dedicata alla valorizzazione agronomica del suolo africano. L’incarico ha previsto un intervento strutturale di restyling della landing page e la definizione di una nuova brand identity coordinata. Il progetto si è esteso alla progettazione e allo sviluppo di materiali promozionali e merchandising istituzionale destinati ai cicli di conferenze internazionali.  ',
+        role: 'Obiettivo era quello di sviluppare un identità visiva che fosse distintiva e memorabile, nel pieno rispetto dei requisiti dati.',
+        tools: 'Figma, Adobe Illustrator, AI',
+        link: 'Vecchio sito: https://panafgeo.eurogeosurveys.org/',
+        gallery: [
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/1.png',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/2.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/3.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/4.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/5.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/6.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/7.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/8.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/9.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/10.png',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/11.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/12.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/13.jpg'
+        ]
     }
 };
 // ===== WINDOW MANAGEMENT =====
@@ -236,6 +270,7 @@ function createWindow(type) {
         case 'BACK2BACK':
         case 'OIKA':
         case 'PanAfGeo+':
+        case 'FERMA Forum 2026':
             
             // Project window with full structure
             const project = projectData[type];
