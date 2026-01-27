@@ -127,9 +127,9 @@ const projectData = {
             color: "#269980",
         },
         title: 'AGRIVOLT',
+        //category: 'Web Development',
         date: 'N.A.',
         location: 'N.A.',
-        //resume: '',
         brief: 'Agrivolt è una realtà innovativa specializzata in sistemi agrivoltaici che armonizzano produzione energetica e agricoltura sostenibile. Attraverso l’impiego di strutture sopraelevate, l’azienda ottimizza l’uso del suolo garantendo la perfetta coesistenza tra tecnologia e colture.',
         role: 'Sviluppare un’identità visiva distintiva che posizioni Agrivolt come leader nell’innovazione agrivoltaica',
         tools: 'Adobe Illustrator',
@@ -290,9 +290,6 @@ function createWindow(type) {
                             <span><strong>LUOGO:</strong> ${project.location}</span>
                             <span><strong>DATA:</strong> ${project.date}</span>
                         </div>
-                        <!-- <div style="font-size: 10px; color: #a0aec0; margin-top: 5px;">
-                            <strong>SUNTO:</strong> ${project.resume}
-                        </div> -->
                     </div>
 
                     <div style="margin-bottom: 15px;">
@@ -416,13 +413,13 @@ function createWindow(type) {
                         </div>
                         
                         <!-- NOME PROGETTO -->
-                        <strong style="color: ${project.style.color}; font-size: 11px; text-align: center; max-width: 90px; word-wrap: break-word;">
+                        <strong style="color: ${project.style.color}; font-size: 11px; text-align: center; max-width: 100px; word-wrap: break-word;">
                             ${project.title}
                         </strong>
                         
                         <!-- CATEGORIA -->
                         <span style="font-size: 9px; color: #a0aec0; text-align: center;">
-                            ${project.category ?? "[Brand Identity]"}
+                            ${project.category ?? ""}
                         </span>
                     </div>
                 `)
