@@ -131,7 +131,7 @@ const projectData = {
         date: 'N.A.',
         location: 'N.A.',
         brief: 'Agrivolt è una realtà innovativa specializzata in sistemi agrivoltaici che armonizzano produzione energetica e agricoltura sostenibile. Attraverso l’impiego di strutture sopraelevate, l’azienda ottimizza l’uso del suolo garantendo la perfetta coesistenza tra tecnologia e colture.',
-        role: 'Sviluppare un’identità visiva distintiva che posizioni Agrivolt come leader nell’innovazione agrivoltaica',
+        role: 'Sviluppare un’identità visiva distintiva che posizioni Agrivolt come leader nell’innovazione agrivoltaica.',
         tools: 'Adobe Illustrator',
         //link: 'https://design-system-demo.com',
         gallery: [
@@ -149,15 +149,15 @@ const projectData = {
     },
     'BACK2BACK': {
         style: {
-            color: "#949494"
+            color: "#b8b8b8"
         },
         title: 'BACK 2 BACK',
         //category: 'Web Development',
         date: 'N.A.',
         location: 'N.A.',
-        brief: 'Caratterizzato da un’identità stilistica unica, il marchio si rivolge a chi vede nella moda una forma d’arte e uno strumento di espressione personale nel contesto urbano. Il brand si distacca dalle logiche di massa per concentrarsi sullo sviluppo di collezioni d’avanguardia, capaci di coniugare innovazione tecnica e sostenibilità ambientale. L’impegno verso la propria community si riflette in una filiera trasparente che valorizza rigorosamente il Made in Italy, garantendo standard qualitativi elevati e un impatto sociale positivo.',
-        role: 'Realizzare una Brand Identity + Landing Page',
-        tools: 'Figma - Adobe Illustrator',
+        brief: 'Il marchio si rivolge a chi vede nella moda una forma d’arte e uno strumento di espressione personale nel contesto urbano. Il brand si distacca dalle logiche di massa per concentrarsi sullo sviluppo di collezioni d’avanguardia, capaci di coniugare innovazione tecnica e sostenibilità ambientale. Garantendo standard qualitativi elevati e un impatto sociale positivo.',
+        role: 'L’obiettivo è stato tradurre i valori del brand in un’identità visiva distintiva e in una presenza digitale strategica. Attraverso il design della brand identity e lo sviluppo di una landing page dedicata.',
+        tools: 'Figma - Adobe Illustrator - Blender',
         //link: 'https://ecommerce-platform-demo.com',
         gallery: [
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/1.jpg', // Immagine 1
@@ -170,22 +170,22 @@ const projectData = {
     },
     'OIKA': {
         style: {
-            color: "#f94848"
+            color: "#c45959"
         },
         title: 'OIKA',
         //category: '3D & Interactive',
         date: 'Marzo 2025 - Giugno 2025',
-        location: 'Napoli',
-        brief: 'Oika is a navigation aid designed for blind and visually impaired person to move safely in open, unstructured environments where traditional navigation tools fall short',
-        role: 'Helps people with visual impairments who want to feel more indipendent by guiding them to a saved location in open spaces ',
+        location: 'San Giovanni Barra, NA',
+        brief: 'Oika è un ausilio alla navigazione progettato per consentire alle persone non vedenti e ipovedenti di muoversi in sicurezza in ambienti aperti e non strutturati, dove gli strumenti di navigazione tradizionali risultano insufficienti.',
+        role: 'Aiuta le persone con disabilità visive che desiderano sentirsi più indipendenti guidandole verso una posizione salvata in spazi aperti.',
         tools: 'Procreate, Adobe Illustrator, Figma',
-        link: 'https://3d-experience-demo.com',
+        //link: 'https://3d-experience-demo.com',
         gallery: [
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/1.png', // Immagine 1
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/2.jpg', // Immagine 2
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/3.jpg', // Immagine 3
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/5.jpg', // Immagine 2
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/2.jpg', // Immagine 3
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/3.jpg',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/4.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/5.jpg',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/6.jpg'
         ]
     },
@@ -197,10 +197,10 @@ const projectData = {
         //category: 'AI Integration',
         date: 'Agosto 2025 - Dicembre 2025',
         location: 'Bruxelles, BE',
-        brief: 'Iniziativa di rilevanza internazionale dedicata alla valorizzazione agronomica del suolo africano. L’incarico ha previsto un intervento strutturale di restyling della landing page e la definizione di una nuova brand identity coordinata. Il progetto si è esteso alla progettazione e allo sviluppo di materiali promozionali e merchandising istituzionale destinati ai cicli di conferenze internazionali.  ',
-        role: 'Obiettivo era quello di sviluppare un identità visiva che fosse distintiva e memorabile, nel pieno rispetto dei requisiti dati.',
+        brief: 'PanAfGeo+ è un’iniziativa strategica di cooperazione internazionale che vede la collaborazione tra l’Unione Europea e l’Unione Africana. Il progetto mira al rafforzamento delle competenze tecniche dei servizi geologici africani, focalizzandosi sulla valorizzazione sostenibile delle risorse naturali e sulla gestione consapevole del suolo.',
+        role: 'L’obiettivo è stato quello di armonizzare i rigorosi standard comunicativi della Commissione Europea con la necessità di una narrazione visiva moderna e autorevole, funzionale alla promozione della ricerca e della formazione sul campo.',
         tools: 'Figma, Adobe Illustrator, AI',
-        link: 'Vecchio sito: https://panafgeo.eurogeosurveys.org/',
+        //link: 'Vecchio sito: https://panafgeo.eurogeosurveys.org/',
         gallery: [
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/1.png',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/2.jpg',
@@ -225,24 +225,18 @@ const projectData = {
         //category: 'AI Integration',
         date: 'Agosto 2025 - Dicembre 2025',
         location: 'Bruxelles, BE',
-        brief: 'Iniziativa di rilevanza internazionale dedicata alla valorizzazione agronomica del suolo africano. L’incarico ha previsto un intervento strutturale di restyling della landing page e la definizione di una nuova brand identity coordinata. Il progetto si è esteso alla progettazione e allo sviluppo di materiali promozionali e merchandising istituzionale destinati ai cicli di conferenze internazionali.  ',
-        role: 'Obiettivo era quello di sviluppare un identità visiva che fosse distintiva e memorabile, nel pieno rispetto dei requisiti dati.',
-        tools: 'Figma, Adobe Illustrator, AI',
-        link: 'Vecchio sito: https://panafgeo.eurogeosurveys.org/',
+        brief: 'Evoluzione dell’immagine coordinata per il FERMA Forum, l’hub europeo della cultura del rischio.',
+        role: 'L’attività si è concentrata sulla creazione di un linguaggio visivo moderno e professionale, applicato sia alla presenza digitale che all’allestimento dell’evento.',
+        tools: 'Adobe Illustrator, AI',
+        //link: 'Vecchio sito: https://panafgeo.eurogeosurveys.org/',
         gallery: [
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/1.png',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/2.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/3.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/4.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/5.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/6.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/7.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/8.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/9.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/10.png',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/11.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/12.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/13.jpg'
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/1.png',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/2.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/3.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/4.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/5.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/6.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/7.jpg'
         ]
     }
 };
