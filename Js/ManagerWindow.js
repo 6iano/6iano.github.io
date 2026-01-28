@@ -281,6 +281,25 @@ const projectData = {
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/6.jpg',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/7.jpg'
         ]
+    },
+    'PLAYLIST COVERS': {
+        style: {
+            color: "#d58324"
+        },
+        title: 'PLAYLIST COVERS',
+        //category: 'AI Integration',
+        date: 'N.A.',
+        location: 'N.A.',
+        brief: 'Esigenza di rendere uniche le copertine delle varie playlist di Spotify.',
+        role: 'Dare un identià ad ogni playlist, mantenendo una coerenza grafica.',
+        tools: 'Adobe Illustrator',
+        link: 'https://open.spotify.com/user/11145090949?si=e25acfe5bf314534',
+        gallery: [
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_08/3.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_08/4.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_08/5.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_08/6.jpg'
+        ]
     }
 };
 // ===== WINDOW MANAGEMENT =====
@@ -310,6 +329,7 @@ function createWindow(type) {
         case 'FERMA Forum 2026':
         case 'FERMA ESG Toolbox':
         case 'URBAN KONG':
+        case 'PLAYLIST COVERS':
             
             // Project window with full structure
             const project = projectData[type];
