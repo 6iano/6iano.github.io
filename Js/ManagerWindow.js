@@ -637,8 +637,10 @@ function createWindow(type) {
     // Make window draggable
     makeWindowDraggable(windowEl);
 
-    // Make window resizable
-    makeWindowResizable(windowEl);
+    // Make window resizable exepted for the Game
+    if (type !== 'game') {
+        makeWindowResizable(windowEl);
+    }
 
     // Initialize game if needed
     if (type === 'game') {
