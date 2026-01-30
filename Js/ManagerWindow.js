@@ -284,7 +284,7 @@ const projectData = {
     },
     'PLAYLIST COVERS': {
         style: {
-            color: "#d58324"
+            color: "#466dba"
         },
         title: 'PLAYLIST COVERS',
         //category: 'AI Integration',
@@ -299,6 +299,23 @@ const projectData = {
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_08/4.jpg',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_08/5.jpg',
             '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_08/6.jpg'
+        ]
+    },
+    'SONGS COVERS': {
+        style: {
+            color: "#9a7777"
+        },
+        title: 'SONGS COVERS',
+        //category: 'AI Integration',
+        date: 'N.A.',
+        location: 'N.A.',
+        brief: 'Il progetto prevedeva la realizzazione di due cover per due brani dell’artista napoletano "NOID"',
+        role: 'Rappresentare i sentimenti dei due brani, in un artefatto visivo.',
+        tools: 'Adobe Photoshop',
+        link: '',
+        gallery: [
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_09/1.jpg',
+            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_09/2.jpg'
         ]
     }
 };
@@ -330,6 +347,7 @@ function createWindow(type) {
         case 'FERMA ESG Toolbox':
         case 'URBAN KONG':
         case 'PLAYLIST COVERS':
+        case 'SONGS COVERS':
             
             // Project window with full structure
             const project = projectData[type];
@@ -589,6 +607,7 @@ function createWindow(type) {
                 Se dovessi riscontrare errori o malfunzionamenti, ti sarei grato se potessi segnalarmeli.<br>
                 Puoi inviare una mail con i dettagli del problema alla mail che trovi in "Contatti"<br><br>
                 <strong>CREDITS:</strong><br>
+                Icone: https://www.flaticon.com/search?style_id=1236&author_id=6926&word=pixel&type=standard
             </p>
             <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #718096;">
                 <p style="font-size: 11px; color: #a0aec0;">v1.0 - Made with love and a lot of coffee</p>
@@ -933,22 +952,22 @@ const durationEl = document.getElementById('duration');
 let playlist = [
     {
         name: 'Synthwave Dreams',
-        url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
+        url: '',
         artist: 'RetroWave'
     },
     {
         name: 'Neon Nights',
-        url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
+        url: '',
         artist: 'CyberArtist'
     },
     {
         name: 'Digital Paradise',
-        url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3',
+        url: '',
         artist: 'SynthMaster'
     },
     {
-        name: 'Vaporwave Vibes',
-        url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3',
+        name: 'PROVAAAA',
+        url: '',
         artist: 'VaporKing'
     }
 ];
