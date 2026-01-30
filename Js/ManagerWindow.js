@@ -951,24 +951,24 @@ const durationEl = document.getElementById('duration');
 // Playlist - Your Music Taste
 let playlist = [
     {
-        name: 'Synthwave Dreams',
-        url: '',
-        artist: 'RetroWave'
+        name: 'Moon River',
+        url: '/Users/gennarogrieco/Documents/GitHub/Portfolio/Musics/Frank Ocean Moon River.mp3',
+        artist: 'Frank Ocean'
     },
     {
-        name: 'Neon Nights',
-        url: '',
-        artist: 'CyberArtist'
+        name: 'Selfless',
+        url: '/Users/gennarogrieco/Documents/GitHub/Portfolio/Musics/The Strokes Selfless Official Audio.mp3',
+        artist: 'The Strokes'
     },
     {
-        name: 'Digital Paradise',
-        url: '',
-        artist: 'SynthMaster'
+        name: 'G.O.A.T. - Il Cuore',
+        url: '/Users/gennarogrieco/Documents/GitHub/Portfolio/Musics/Marracash G.O.A.T. Il Cuore.mp3',
+        artist: 'Marracash'
     },
     {
-        name: 'PROVAAAA',
-        url: '',
-        artist: 'VaporKing'
+        name: 'Feel Good Inc',
+        url: '/Users/gennarogrieco/Documents/GitHub/Portfolio/Musics/Gorillaz Feel Good Inc Official Video.mp3',
+        artist: 'Gorillaz'
     }
 ];
 
