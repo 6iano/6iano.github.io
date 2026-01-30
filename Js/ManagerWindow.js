@@ -12,8 +12,8 @@ const state = {
 
 const translations = {
     en: {
-        about: { 
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">About' 
+        about: {
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">About'
             //role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
             //intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', 
             //exp: '💼 EXPERIENCES', 
@@ -21,31 +21,31 @@ const translations = {
             //skills: '⚡ SKILLS', 
             //download: '📥 DOWNLOAD CV' 
         },
-        projects: { 
+        projects: {
             title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Projects',
             description: 'Modern design system with responsive components and accessibility features.',
             tools: 'Ciao'
         },
-        contact: { 
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contact', 
-            getInTouch: 'GET IN TOUCH', 
-            location: '📍 Location: Santa Maria Capua Vetere, Campania, Italy', 
-            email: '✉️ Email:', 
-            linkedin: '💼 LinkedIn:', 
-            github: '🐙 GitHub:', 
-            website: '🌐 Website:', 
-            sendMessage: '✉️ SEND MESSAGE', 
-            yourName: 'Your Name:', 
-            yourEmail: 'Your Email:', 
-            subject: 'Subject:', 
-            message: 'Message:', 
-            sendBtn: '📤 SEND EMAIL' 
+        contact: {
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contact',
+            getInTouch: 'GET IN TOUCH',
+            location: '📍 Location: Santa Maria Capua Vetere, Campania, Italy',
+            email: '✉️ Email:',
+            linkedin: '💼 LinkedIn:',
+            github: '🐙 GitHub:',
+            website: '🌐 Website:',
+            sendMessage: '✉️ SEND MESSAGE',
+            yourName: 'Your Name:',
+            yourEmail: 'Your Email:',
+            subject: 'Subject:',
+            message: 'Message:',
+            sendBtn: '📤 SEND EMAIL'
         },
-        game: { 
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake' 
+        game: {
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake'
         },
-        info: { 
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">README.txt' 
+        info: {
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">README.txt'
             //role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
             //intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', 
             //exp: '💼 EXPERIENCES', 
@@ -53,17 +53,17 @@ const translations = {
             //skills: '⚡ SKILLS', 
             //download: '📥 DOWNLOAD CV' 
         },
-        icons: { 
-            about: 'ABOUT ME', 
-            projects: 'PROJECTS', 
-            contact: 'CONTACTS', 
-            game: 'GAME', 
-            info: 'README.txt' 
+        icons: {
+            about: 'ABOUT ME',
+            projects: 'PROJECTS',
+            contact: 'CONTACTS',
+            game: 'GAME',
+            info: 'README.txt'
         }
     },
     it: {
-        about: { 
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Chi Sono' 
+        about: {
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Chi Sono'
             //role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
             //intro: 'Specializzato in UI/UX Design, Modellazione 3D ed Esperienze Web Interattive. Basato a Santa Maria Capua Vetere, Italia.', 
             //exp: '💼 ESPERIENZE', 
@@ -71,44 +71,44 @@ const translations = {
             //skills: '⚡ COMPETENZE', 
             //download: '📥 SCARICA CV' 
         },
-        projects: { 
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Progetti', 
+        projects: {
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Progetti',
             description: 'Sistema di design moderno con componenti responsive e funzioni di accessibilità.',
             tools: 'Groda'
         },
-        contact: { 
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contatti', 
-            getInTouch: 'CONTATTAMI', 
-            location: '📍 Ubicazione: Santa Maria Capua Vetere, Campania, Italia', 
-            email: '✉️ Email:', 
-            linkedin: '💼 LinkedIn:', 
-            github: '🐙 GitHub:', 
-            website: '🌐 Sito:', 
-            sendMessage: '✉️ INVIA MESSAGGIO', 
-            yourName: 'Il Tuo Nome:', 
-            yourEmail: 'La Tua Email:', 
-            subject: 'Oggetto:', 
-            message: 'Messaggio:', 
-            sendBtn: '📤 INVIA EMAIL' 
+        contact: {
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contatti',
+            getInTouch: 'CONTATTAMI',
+            location: '📍 Ubicazione: Santa Maria Capua Vetere, Campania, Italia',
+            email: '✉️ Email:',
+            linkedin: '💼 LinkedIn:',
+            github: '🐙 GitHub:',
+            website: '🌐 Sito:',
+            sendMessage: '✉️ INVIA MESSAGGIO',
+            yourName: 'Il Tuo Nome:',
+            yourEmail: 'La Tua Email:',
+            subject: 'Oggetto:',
+            message: 'Messaggio:',
+            sendBtn: '📤 INVIA EMAIL'
         },
-        game: { 
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake' 
+        game: {
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake'
         },
-        info: { 
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Leggimi.txt', 
-            role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
-            intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', 
-            exp: '💼 EXPERIENCES', 
-            form: '🎓 FORMATION', 
-            skills: '⚡ SKILLS', 
-            download: '📥 DOWNLOAD CV' 
+        info: {
+            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Leggimi.txt',
+            role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER',
+            intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.',
+            exp: '💼 EXPERIENCES',
+            form: '🎓 FORMATION',
+            skills: '⚡ SKILLS',
+            download: '📥 DOWNLOAD CV'
         },
-        icons: { 
-            about: 'ABOUT ME', 
-            projects: 'PROGETTI', 
-            contact: 'CONTATTI', 
-            game: 'GAME', 
-            info: 'LEGGIMI.txt' 
+        icons: {
+            about: 'ABOUT ME',
+            projects: 'PROGETTI',
+            contact: 'CONTATTI',
+            game: 'GAME',
+            info: 'LEGGIMI.txt'
         }
     }
 };
@@ -348,7 +348,7 @@ function createWindow(type) {
         case 'URBAN KONG':
         case 'PLAYLIST COVERS':
         case 'SONGS COVERS':
-            
+
             // Project window with full structure
             const project = projectData[type];
             content = `
@@ -606,6 +606,10 @@ function createWindow(type) {
                 Questo significa che potresti incontrare funzionalità incomplete, o comportamenti imprevisti.
                 Se dovessi riscontrare errori o malfunzionamenti, ti sarei grato se potessi segnalarmeli.<br>
                 Puoi inviare una mail con i dettagli del problema alla mail che trovi in "Contatti"<br><br>
+                <strong>DISCLAMER</strong>
+                I brani musicali presenti in questo progetto sono utilizzati esclusivamente a scopo dimostrativo e non commerciale.
+                Tutti i diritti appartengono ai rispettivi autori e detentori dei diritti.
+                I contenuti verranno rimossi su richiesta dei legittimi proprietari.<br><br>
                 <strong>CREDITS:</strong><br>
                 Icone: https://www.flaticon.com/search?style_id=1236&author_id=6926&word=pixel&type=standard
             </p>
@@ -687,52 +691,52 @@ function makeWindowDraggable(windowEl) {
 }
 
 function makeWindowResizable(windowEl) {
-  const handle = document.createElement('div');
-  handle.className = 'resize-handle';
-  windowEl.appendChild(handle);
+    const handle = document.createElement('div');
+    handle.className = 'resize-handle';
+    windowEl.appendChild(handle);
 
-  let startX = 0, startY = 0, startW = 0, startH = 0;
+    let startX = 0, startY = 0, startW = 0, startH = 0;
 
-  handle.addEventListener('mousedown', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
+    handle.addEventListener('mousedown', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
 
-    const rect = windowEl.getBoundingClientRect();
+        const rect = windowEl.getBoundingClientRect();
 
-    // Forza dimensioni esplicite (se era "auto")
-    windowEl.style.width = rect.width + 'px';
-    windowEl.style.height = rect.height + 'px';
+        // Forza dimensioni esplicite (se era "auto")
+        windowEl.style.width = rect.width + 'px';
+        windowEl.style.height = rect.height + 'px';
 
-    startX = e.clientX;
-    startY = e.clientY;
-    startW = rect.width;
-    startH = rect.height;
+        startX = e.clientX;
+        startY = e.clientY;
+        startW = rect.width;
+        startH = rect.height;
 
-    document.addEventListener('mousemove', doResize);
-    document.addEventListener('mouseup', stopResize);
-  });
+        document.addEventListener('mousemove', doResize);
+        document.addEventListener('mouseup', stopResize);
+    });
 
-  function doResize(e) {
-    const dx = e.clientX - startX;
-    const dy = e.clientY - startY;
+    function doResize(e) {
+        const dx = e.clientX - startX;
+        const dy = e.clientY - startY;
 
-    const minW = 300;  // coerente col tuo CSS
-    const minH = 180;
+        const minW = 300;  // coerente col tuo CSS
+        const minH = 180;
 
-    const maxW = window.innerWidth * 0.9;
-    const maxH = window.innerHeight * 0.9;
+        const maxW = window.innerWidth * 0.9;
+        const maxH = window.innerHeight * 0.9;
 
-    const newW = Math.min(Math.max(startW + dx, minW), maxW);
-    const newH = Math.min(Math.max(startH + dy, minH), maxH);
+        const newW = Math.min(Math.max(startW + dx, minW), maxW);
+        const newH = Math.min(Math.max(startH + dy, minH), maxH);
 
-    windowEl.style.width = newW + 'px';
-    windowEl.style.height = newH + 'px';
-  }
+        windowEl.style.width = newW + 'px';
+        windowEl.style.height = newH + 'px';
+    }
 
-  function stopResize() {
-    document.removeEventListener('mousemove', doResize);
-    document.removeEventListener('mouseup', stopResize);
-  }
+    function stopResize() {
+        document.removeEventListener('mousemove', doResize);
+        document.removeEventListener('mouseup', stopResize);
+    }
 }
 
 
@@ -1293,7 +1297,80 @@ function createSettingsWindow() {
     windowEl.style.zIndex = state.zIndex++;
     windowEl.style.pointerEvents = 'auto';
 
-    const content = '<div class="window-header"><span class="window-title">⚙️ System Settings</span><div class="window-controls"><button class="window-btn">_</button><button class="window-btn">□</button><button class="window-btn close" data-close="settings">×</button></div></div><div class="window-content"><div style="margin-bottom: 15px;"><h4 style="color: #718096; font-size: 11px; margin-bottom: 8px; text-transform: uppercase;">LANGUAGE</h4><p style="font-size: 10px; color: #a0aec0; margin-top: 5px;">Seleziona la lingua preferita</p><select id="languageSelect" style="width: 100%; padding: 8px; background: rgba(0,0,0,0.3); border: 1px solid #718096; color: #00ffff; font-family: Courier New, monospace; font-size: 11px; border-radius: 2px; cursor: pointer;"><option value="en">English</option><option value="it">Italiano</option></select></div><div style="margin-bottom: 15px; padding-top: 10px; border-top: 1px solid #718096;"><h4 style="color: #718096; font-size: 11px; margin-bottom: 8px; text-transform: uppercase;">THEME</h4><p style="font-size: 10px; color: #a0aec0; margin-top: 8px;">Choose your preferred color scheme</p><div style="display: flex; gap: 10px; margin-bottom: 10px;"><label style="display: flex; align-items: center; gap: 8px; cursor: pointer; flex: 1;"><input type="radio" name="theme" value="auto" id="themeAuto" checked style="cursor: pointer;"><span style="font-size: 11px; color: #cbd5e0;">Auto System</span></label></div><div style="display: flex; gap: 10px;"><label style="display: flex; align-items: center; gap: 8px; cursor: pointer; flex: 1;"><input type="radio" name="theme" value="light" id="themeLight" style="cursor: pointer;"><span style="font-size: 11px; color: #cbd5e0;">Light</span></label><label style="display: flex; align-items: center; gap: 8px; cursor: pointer; flex: 1;"><input type="radio" name="theme" value="dark" id="themeDark" style="cursor: pointer;"><span style="font-size: 11px; color: #cbd5e0;">Dark</span></label></div></div><div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;"><button id="settingsApplyBtn" style="width: 100%; padding: 8px; background: #4a5568; color: #f7fafc; border: 1px solid #718096; font-family: Courier New, monospace; font-weight: bold; cursor: pointer; border-radius: 2px; transition: all 0.2s; font-size: 11px; margin-bottom: 8px;" onmouseover="this.style.background=\'#718096\'; this.style.boxShadow=\'0 0 8px rgba(113, 128, 150, 0.5)\'" onmouseout="this.style.background=\'#4a5568\'; this.style.boxShadow=\'none\'">APPLY CHANGES</button><button id="settingsCloseBtn" style="width: 100%; padding: 8px; background: rgba(113, 128, 150, 0.2); color: #f7fafc; border: 1px solid #718096; font-family: Courier New, monospace; font-weight: bold; cursor: pointer; border-radius: 2px; transition: all 0.2s; font-size: 11px;" onmouseover="this.style.background=\'rgba(113, 128, 150, 0.3)\'; this.style.boxShadow=\'0 0 8px rgba(113, 128, 150, 0.5)\'" onmouseout="this.style.background=\'rgba(113, 128, 150, 0.2)\'; this.style.boxShadow=\'none\'">CANCEL</button></div><div style="margin-top: 12px; padding: 8px; background: rgba(72, 187, 120, 0.1); border: 1px solid #48bb78; border-radius: 3px;"><p style="font-size: 9px; color: #48bb78; margin: 0;"><strong>ℹ️ INFO</strong> Settings are saved locally in your browser</p></div></div>';
+    const content = `
+<div class="window-header">
+    <span class="window-title">⚙️ System Settings</span>
+    <div class="window-controls">
+        <button class="window-btn">_</button>
+        <button class="window-btn">□</button>
+        <button class="window-btn close" data-close="settings">×</button>
+    </div>
+</div>
+
+<div class="window-content">
+    <div style="margin-bottom: 15px;">
+        <h4 style="color: #718096; font-size: 11px; margin-bottom: 8px; text-transform: uppercase;">LANGUAGE</h4>
+        <p style="font-size: 10px; color: #a0aec0; margin-top: 5px;">Seleziona la lingua preferita</p>
+        <select
+            id="languageSelect"
+            style="width: 100%; padding: 8px; background: rgba(0,0,0,0.3); border: 1px solid #718096; color: #00ffff; font-family: Courier New, monospace; font-size: 11px; border-radius: 2px; cursor: pointer;"
+        >
+            <option value="en">English</option>
+            <option value="it">Italiano</option>
+        </select>
+    </div>
+
+    <div style="margin-bottom: 15px; padding-top: 10px; border-top: 1px solid #718096;">
+        <h4 style="color: #718096; font-size: 11px; margin-bottom: 8px; text-transform: uppercase;">THEME</h4>
+        <p style="font-size: 10px; color: #a0aec0; margin-top: 8px;">Choose your preferred color scheme</p>
+
+        <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; flex: 1;">
+                <input type="radio" name="theme" value="auto" id="themeAuto" checked>
+                <span style="font-size: 11px; color: #cbd5e0;">Auto System</span>
+            </label>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; flex: 1;">
+                <input type="radio" name="theme" value="light" id="themeLight">
+                <span style="font-size: 11px; color: #cbd5e0;">Light</span>
+            </label>
+
+            <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; flex: 1;">
+                <input type="radio" name="theme" value="dark" id="themeDark">
+                <span style="font-size: 11px; color: #cbd5e0;">Dark</span>
+            </label>
+        </div>
+    </div>
+
+    <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
+        <button
+            id="settingsApplyBtn"
+            style="width: 100%; padding: 8px; background: #4a5568; color: #f7fafc; border: 1px solid #718096; font-family: Courier New, monospace; font-weight: bold; cursor: pointer; border-radius: 2px; transition: all 0.2s; font-size: 11px; margin-bottom: 8px;"
+            onmouseover="this.style.background='#718096'; this.style.boxShadow='0 0 8px rgba(113, 128, 150, 0.5)'"
+            onmouseout="this.style.background='#4a5568'; this.style.boxShadow='none'"
+        >
+            APPLY CHANGES
+        </button>
+
+        <button
+            id="settingsCloseBtn"
+            style="width: 100%; padding: 8px; background: rgba(113, 128, 150, 0.2); color: #f7fafc; border: 1px solid #718096; font-family: Courier New, monospace; font-weight: bold; cursor: pointer; border-radius: 2px; transition: all 0.2s; font-size: 11px;"
+            onmouseover="this.style.background='rgba(113, 128, 150, 0.3)'; this.style.boxShadow='0 0 8px rgba(113, 128, 150, 0.5)'"
+            onmouseout="this.style.background='rgba(113, 128, 150, 0.2)'; this.style.boxShadow='none'"
+        >
+            CANCEL
+        </button>
+    </div>
+
+    <div style="margin-top: 12px; padding: 8px; background: rgba(72, 187, 120, 0.1); border: 1px solid #48bb78; border-radius: 3px;">
+        <p style="font-size: 8px; color: #48bb78; margin: 0; letter-spacing: 0;">
+            <strong>ℹ️ INFO</strong> Settings are saved locally in your browser
+        </p>
+    </div>
+</div>
+`;
 
     windowEl.innerHTML = content;
     document.body.appendChild(windowEl);
