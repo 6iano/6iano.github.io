@@ -419,7 +419,7 @@ function createWindow(type) {
                 </div>
                 <div class="window-content">
                     <p><strong style="color: #F08000;">COSE DA SAPERE SU DI ME</strong></p>
-                    <p style="margin-top: 10px;">
+                    <p style="margin-top: 10px; letter-spacing: 0px;">
                         Mi chiamo Gennaro, in arte Giano, ho 26 anni e vengo da Napoli, cosa che, dal nome, si intuisce abbastanza facilmente. 
                         </br>
                         </br>
