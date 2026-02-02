@@ -79,12 +79,12 @@ const translations = {
         contact: {
             title: '<img src="Assets/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contatti',
             getInTouch: 'CONTATTAMI',
-            location: '📍 Ubicazione: Santa Maria Capua Vetere, Campania, Italia',
-            email: '✉️ Email:',
-            linkedin: '💼 LinkedIn:',
-            github: '🐙 GitHub:',
-            website: '🌐 Sito:',
-            sendMessage: '✉️ INVIA MESSAGGIO',
+            location: 'Ubicazione: Santa Maria Capua Vetere, Campania, Italia',
+            email: 'Email:',
+            linkedin: 'LinkedIn:',
+            github: 'GitHub:',
+            website: 'Sito:',
+            sendMessage: 'INVIA MESSAGGIO',
             yourName: 'Il Tuo Nome:',
             yourEmail: 'La Tua Email:',
             subject: 'Oggetto:',
@@ -527,15 +527,15 @@ function createWindow(type) {
                     </div>
                 </div>
                 <div class="window-content">
-                    <p><strong style="color: #ff00ff;">GET IN TOUCH</strong></p>
-                    <p style="margin-top: 10px;">📍 Location: Santa Maria Capua Vetere, Campania, Italy</p>
-                    <p>✉️ <strong>Email:</strong> <span style="color: #00ffff;">designer@retroportfolio.dev</span></p>
-                    <p>💼 <strong>LinkedIn:</strong> <span style="color: #ffff00;">/in/your-profile</span></p>
-                    <p>🐙 <strong>GitHub:</strong> <span style="color: #39ff14;">/your-username</span></p>
-                    <p>🌐 <strong>Website:</strong> <span style="color: #ff006e;">retroportfolio.dev</span></p>
+                    <p><strong style="color: #ff00ff;">MY INFO</strong></p>
+                    <p style="margin-top: 10px;">Location: Pozzuoli, Campania, Italy</p>
+                    <p><strong>Email:</strong> <span style="color: #00ffff;">Grieco.Gennaro128@gmail.com</span></p>
+                    <p><strong>LinkedIn:</strong> <span style="color: #ffff00;">www.linkedin.com/in/gennaro-grieco</span></p>
+                    <p><strong>GitHub:</strong> <span style="color: #39ff14;">https://github.com/6iano</span></p>
+                    <p><strong>Beanche:</strong> <span style="color: #ff006e;">https://www.behance.net/gennarogrieco1</span></p>
                     
                     <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
-                        <p><strong style="color: #00ffff;">✉️ SEND MESSAGE</strong></p>
+                        <p><strong style="color: #00ffff;">LETS WORK TOGETHER!</strong></p>
                         <form id="contactForm" style="margin-top: 10px;">
                             <div style="margin-bottom: 10px;">
                                 <label style="display: block; font-size: 10px; color: #a0aec0; margin-bottom: 5px;">Your Name:</label>
