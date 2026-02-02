@@ -13,7 +13,7 @@ const state = {
 const translations = {
     en: {
         about: {
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">About'
+            title: '<img src="Assets/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">About'
             //role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
             //intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', 
             //exp: '💼 EXPERIENCES', 
@@ -22,12 +22,12 @@ const translations = {
             //download: '📥 DOWNLOAD CV' 
         },
         projects: {
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Projects',
+            title: '<img src="Assets/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Projects',
             description: 'Modern design system with responsive components and accessibility features.',
             tools: 'Ciao'
         },
         contact: {
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contact',
+            title: '<img src="Assets/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contact',
             getInTouch: 'GET IN TOUCH',
             location: '📍 Location: Santa Maria Capua Vetere, Campania, Italy',
             email: '✉️ Email:',
@@ -42,10 +42,10 @@ const translations = {
             sendBtn: '📤 SEND EMAIL'
         },
         game: {
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake'
+            title: '<img src="Assets/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake'
         },
         info: {
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">README.txt'
+            title: '<img src="Assets/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">README.txt'
             //role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
             //intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', 
             //exp: '💼 EXPERIENCES', 
@@ -63,7 +63,7 @@ const translations = {
     },
     it: {
         about: {
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Chi Sono'
+            title: '<img src="Assets/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Chi Sono'
             //role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
             //intro: 'Specializzato in UI/UX Design, Modellazione 3D ed Esperienze Web Interattive. Basato a Santa Maria Capua Vetere, Italia.', 
             //exp: '💼 ESPERIENZE', 
@@ -72,12 +72,12 @@ const translations = {
             //download: '📥 SCARICA CV' 
         },
         projects: {
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Progetti',
+            title: '<img src="Assets/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Progetti',
             description: 'Sistema di design moderno con componenti responsive e funzioni di accessibilità.',
             tools: 'Groda'
         },
         contact: {
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contatti',
+            title: '<img src="Assets/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contatti',
             getInTouch: 'CONTATTAMI',
             location: '📍 Ubicazione: Santa Maria Capua Vetere, Campania, Italia',
             email: '✉️ Email:',
@@ -92,10 +92,10 @@ const translations = {
             sendBtn: '📤 INVIA EMAIL'
         },
         game: {
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake'
+            title: '<img src="Assets/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake'
         },
         info: {
-            title: '<img src="/Users/gennarogrieco/Documents/GitHub/Portfolio/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Leggimi.txt',
+            title: '<img src="Assets/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Leggimi.txt',
             role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER',
             intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.',
             exp: '💼 EXPERIENCES',
@@ -135,16 +135,16 @@ const projectData = {
         tools: 'Adobe Illustrator',
         //link: 'https://design-system-demo.com',
         gallery: [
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/1.jpg', // Immagine 1
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/2.jpg', // Immagine 2
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/3.jpg', // Immagine 3
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/4.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/5.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/6.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/7.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/8.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/9.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_01/10.jpg'
+            'Assets/Imgs/Prjct_01/1.jpg', // Immagine 1
+            'Assets/Imgs/Prjct_01/2.jpg', // Immagine 2
+            'Assets/Imgs/Prjct_01/3.jpg', // Immagine 3
+            'Assets/Imgs/Prjct_01/4.jpg',
+            'Assets/Imgs/Prjct_01/5.jpg',
+            'Assets/Imgs/Prjct_01/6.jpg',
+            'Assets/Imgs/Prjct_01/7.jpg',
+            'Assets/Imgs/Prjct_01/8.jpg',
+            'Assets/Imgs/Prjct_01/9.jpg',
+            'Assets/Imgs/Prjct_01/10.jpg'
         ]
     },
     'BACK2BACK': {
@@ -160,12 +160,12 @@ const projectData = {
         tools: 'Figma - Adobe Illustrator - Blender',
         //link: 'https://ecommerce-platform-demo.com',
         gallery: [
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/1.jpg', // Immagine 1
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/2.jpg', // Immagine 2
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/3.jpg', // Immagine 3
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/4.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/5.png',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_02/6.jpg'
+            'Assets/Imgs/Prjct_02/1.jpg', // Immagine 1
+            'Assets/Imgs/Prjct_02/2.jpg', // Immagine 2
+            'Assets/Imgs/Prjct_02/3.jpg', // Immagine 3
+            'Assets/Imgs/Prjct_02/4.jpg',
+            'Assets/Imgs/Prjct_02/5.png',
+            'Assets/Imgs/Prjct_02/6.jpg'
         ]
     },
     'OIKA': {
@@ -181,12 +181,12 @@ const projectData = {
         tools: 'Procreate, Adobe Illustrator, Figma',
         //link: 'https://3d-experience-demo.com',
         gallery: [
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/1.png', // Immagine 1
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/5.jpg', // Immagine 2
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/2.jpg', // Immagine 3
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/3.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/4.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_03/6.jpg'
+            'Assets/Imgs/Prjct_03/1.png', // Immagine 1
+            'Assets/Imgs/Prjct_03/5.jpg', // Immagine 2
+            'Assets/Imgs/Prjct_03/2.jpg', // Immagine 3
+            'Assets/Imgs/Prjct_03/3.jpg',
+            'Assets/Imgs/Prjct_03/4.jpg',
+            'Assets/Imgs/Prjct_03/6.jpg'
         ]
     },
     'PanAfGeo+': {
@@ -202,19 +202,19 @@ const projectData = {
         tools: 'Figma, Adobe Illustrator, AI',
         //link: 'Vecchio sito: https://panafgeo.eurogeosurveys.org/',
         gallery: [
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/1.png',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/2.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/3.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/4.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/5.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/6.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/7.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/8.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/9.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/10.png',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/11.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/12.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_04/13.jpg'
+            'Assets/Imgs/Prjct_04/1.png',
+            'Assets/Imgs/Prjct_04/2.jpg',
+            'Assets/Imgs/Prjct_04/3.jpg',
+            'Assets/Imgs/Prjct_04/4.jpg',
+            'Assets/Imgs/Prjct_04/5.jpg',
+            'Assets/Imgs/Prjct_04/6.jpg',
+            'Assets/Imgs/Prjct_04/7.jpg',
+            'Assets/Imgs/Prjct_04/8.jpg',
+            'Assets/Imgs/Prjct_04/9.jpg',
+            'Assets/Imgs/Prjct_04/10.png',
+            'Assets/Imgs/Prjct_04/11.jpg',
+            'Assets/Imgs/Prjct_04/12.jpg',
+            'Assets/Imgs/Prjct_04/13.jpg'
         ]
     },
     'FERMA Forum 2026': {
@@ -230,13 +230,13 @@ const projectData = {
         tools: 'Adobe Illustrator, AI',
         //link: 'Vecchio sito: https://panafgeo.eurogeosurveys.org/',
         gallery: [
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/1.png',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/2.png',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/3.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/4.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/5.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/7.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_05/6.jpg'
+            'Assets/Imgs/Prjct_05/1.png',
+            'Assets/Imgs/Prjct_05/2.png',
+            'Assets/Imgs/Prjct_05/3.jpg',
+            'Assets/Imgs/Prjct_05/4.jpg',
+            'Assets/Imgs/Prjct_05/5.jpg',
+            'Assets/Imgs/Prjct_05/7.jpg',
+            'Assets/Imgs/Prjct_05/6.jpg'
         ]
     },
     'FERMA ESG Toolbox': {
@@ -252,12 +252,12 @@ const projectData = {
         tools: 'Adobe Illustrator, Adobe Photoshop, AI',
         //link: 'Vecchio sito: https://panafgeo.eurogeosurveys.org/',
         gallery: [
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/1.png',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/2.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/3.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/4.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/5.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_06/6.jpg'
+            'Assets/Imgs/Prjct_06/1.png',
+            'Assets/Imgs/Prjct_06/2.jpg',
+            'Assets/Imgs/Prjct_06/3.jpg',
+            'Assets/Imgs/Prjct_06/4.jpg',
+            'Assets/Imgs/Prjct_06/5.jpg',
+            'Assets/Imgs/Prjct_06/6.jpg'
         ]
     },
     'URBAN KONG': {
@@ -273,13 +273,13 @@ const projectData = {
         tools: 'Adobe Illustrator, Adobe Photoshop, AI, Figma',
         link: 'https://urban-kong.com/',
         gallery: [
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/1.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/2.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/3.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/4.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/5.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/6.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_07/7.jpg'
+            'Assets/Imgs/Prjct_07/1.jpg',
+            'Assets/Imgs/Prjct_07/2.jpg',
+            'Assets/Imgs/Prjct_07/3.jpg',
+            'Assets/Imgs/Prjct_07/4.jpg',
+            'Assets/Imgs/Prjct_07/5.jpg',
+            'Assets/Imgs/Prjct_07/6.jpg',
+            'Assets/Imgs/Prjct_07/7.jpg'
         ]
     },
     'PLAYLIST COVERS': {
@@ -295,10 +295,10 @@ const projectData = {
         tools: 'Adobe Illustrator',
         link: 'https://open.spotify.com/user/11145090949?si=e25acfe5bf314534',
         gallery: [
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_08/3.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_08/4.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_08/5.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_08/6.jpg'
+            'Assets/Imgs/Prjct_08/3.jpg',
+            'Assets/Imgs/Prjct_08/4.jpg',
+            'Assets/Imgs/Prjct_08/5.jpg',
+            'Assets/Imgs/Prjct_08/6.jpg'
         ]
     },
     'SONGS COVERS': {
@@ -314,8 +314,8 @@ const projectData = {
         tools: 'Adobe Photoshop',
         link: '',
         gallery: [
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_09/1.jpg',
-            '/Users/gennarogrieco/Documents/GitHub/Portfolio/Imgs/Prjct_09/2.jpg'
+            'Assets/Imgs/Prjct_09/1.jpg',
+            'Assets/Imgs/Prjct_09/2.jpg'
         ]
     }
 };
@@ -958,22 +958,22 @@ const durationEl = document.getElementById('duration');
 let playlist = [
     {
         name: 'Moon River',
-        url: '/Users/gennarogrieco/Documents/GitHub/Portfolio/Musics/Frank Ocean Moon River.mp3',
+        url: 'Assets/Musics/Frank Ocean Moon River.mp3',
         artist: 'Frank Ocean'
     },
     {
         name: 'Selfless',
-        url: '/Users/gennarogrieco/Documents/GitHub/Portfolio/Musics/The Strokes Selfless Official Audio.mp3',
+        url: 'Assets/Musics/The Strokes Selfless Official Audio.mp3',
         artist: 'The Strokes'
     },
     {
         name: 'G.O.A.T. - Il Cuore',
-        url: '/Users/gennarogrieco/Documents/GitHub/Portfolio/Musics/Marracash G.O.A.T. Il Cuore.mp3',
+        url: 'Assets/Musics/Marracash G.O.A.T. Il Cuore.mp3',
         artist: 'Marracash'
     },
     {
         name: 'Feel Good Inc',
-        url: '/Users/gennarogrieco/Documents/GitHub/Portfolio/Musics/Gorillaz Feel Good Inc Official Video.mp3',
+        url: 'Assets/Musics/Gorillaz Feel Good Inc Official Video.mp3',
         artist: 'Gorillaz'
     }
 ];
