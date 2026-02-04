@@ -14,9 +14,8 @@ const translations = {
     en: {
         about: {
             title: '<img src="Assets/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">ABOUT ME', //Titolo Finestra
-            role: `
-            Questa e prolova    
-            My name is Gennaro, aka Giano, I am 26 years old and I come from Naples, which is pretty easy to guess from my name.
+            role: `   
+                My name is Gennaro, aka Giano, I am 26 years old and I come from Naples, which is pretty easy to guess from my name.
                 I grew up as a programmer, but over time I realized that design was the field where I could truly express myself to the fullest.
                 Music is a fundamental element that can never be missing: my playlists and my CMFs become an integral part of my creative process.
                 In my free time, I play video games, follow streetwear and everything related to visual culture with passion, but that's not all.
