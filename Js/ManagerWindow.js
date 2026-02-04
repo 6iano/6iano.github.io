@@ -13,13 +13,15 @@ const state = {
 const translations = {
     en: {
         about: {
-            title: '<img src="Assets/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">About'
-            //role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
-            //intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', 
-            //exp: '💼 EXPERIENCES', 
-            //form: '🎓 FORMATION', 
-            //skills: '⚡ SKILLS', 
-            //download: '📥 DOWNLOAD CV' 
+            title: '<img src="Assets/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">ABOUT ME', //Titolo Finestra
+            role: `
+                My name is Gennaro, aka Giano, I am 26 years old and I come from Naples, which is pretty easy to guess from my name.
+                I grew up as a programmer, but over time I realized that design was the field where I could truly express myself to the fullest.
+                Music is a fundamental element that can never be missing: my playlists and my CMFs become an integral part of my creative process.
+                In my free time, I play video games, follow streetwear and everything related to visual culture with passion, but that's not all.
+                This is just a brief summary of who I am. Below you can view my CV, while in the Contact section you will find all the information you need to write to me, even if it's just to exchange a few words.
+            `,
+            download: '📥 DOWNLOAD MY CV' 
         },
         projects: {
             title: '<img src="Assets/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Projects',
@@ -44,14 +46,8 @@ const translations = {
         game: {
             title: '<img src="Assets/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake'
         },
-        info: {
+        info: { //Readme Folder
             title: '<img src="Assets/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">README.txt'
-            //role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
-            //intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.', 
-            //exp: '💼 EXPERIENCES', 
-            //form: '🎓 FORMATION', 
-            //skills: '⚡ SKILLS', 
-            //download: '📥 DOWNLOAD CV' 
         },
         icons: {
             about: 'ABOUT ME',
@@ -63,13 +59,15 @@ const translations = {
     },
     it: {
         about: {
-            title: '<img src="Assets/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Chi Sono'
-            //role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER', 
-            //intro: 'Specializzato in UI/UX Design, Modellazione 3D ed Esperienze Web Interattive. Basato a Santa Maria Capua Vetere, Italia.', 
-            //exp: '💼 ESPERIENZE', 
-            //form: '🎓 FORMAZIONE', 
-            //skills: '⚡ COMPETENZE', 
-            //download: '📥 SCARICA CV' 
+            title: '<img src="Assets/Icons/about.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">ABOUT ME',
+            role: `
+                Mi chiamo Gennaro, in arte Giano, ho 26 anni e vengo da Napoli, cosa che, dal nome, si intuisce abbastanza facilmente.
+                Sono cresciuto come programmatore, ma nel tempo ho capito che il Design era lo spazio in cui riuscivo davvero a esprimermi al meglio.
+                Elemento fondamentale che non può mai mancare è la musica: le mie playlist e le mie CMF diventano parte integrante del mio processo creativo.
+                Nel tempo libero videogioco, seguo con passione lo streetwear e tutto ciò che ruota attorno alla cultura visiva, ma non solo.
+                Questo è solo un breve riassunto di chi sono. Qui sotto è possibile visualizzare il mio CV, mentre nella sezione Contatti trovi tutti i riferimenti per scrivermi anche solo per scambiare due parole.
+            `,
+            download: 'SCARICA IL MIO CV' 
         },
         projects: {
             title: '<img src="Assets/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Progetti',
@@ -94,14 +92,8 @@ const translations = {
         game: {
             title: '<img src="Assets/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake'
         },
-        info: {
+        info: { //Readme Folder
             title: '<img src="Assets/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Leggimi.txt',
-            role: '🎨 GRAPHIC DESIGNER & WEB DEVELOPER',
-            intro: 'Specializing in UI/UX Design, 3D Modeling, and Interactive Web Experiences. Based in Santa Maria Capua Vetere, Italy.',
-            exp: '💼 EXPERIENCES',
-            form: '🎓 FORMATION',
-            skills: '⚡ SKILLS',
-            download: '📥 DOWNLOAD CV'
         },
         icons: {
             about: 'ABOUT ME',
@@ -420,17 +412,7 @@ function createWindow(type) {
                 <div class="window-content">
                     <p><strong style="color: #F08000;">COSE DA SAPERE SU DI ME</strong></p>
                     <p style="margin-top: 10px; letter-spacing: 0px;">
-                        Mi chiamo Gennaro, in arte Giano, ho 26 anni e vengo da Napoli, cosa che, dal nome, si intuisce abbastanza facilmente. 
-                        </br>
-                        </br>
-                        Sono cresciuto come programmatore, ma nel tempo ho capito che il Design era lo spazio in cui riuscivo davvero a esprimermi al meglio.
-                        </br>
-                        </br>
-                        Elemento fondamentale che non può mai mancare è la musica: le mie playlist e le mie CMF diventano parte integrante del mio processo creativo.
-                        Nel tempo libero videogioco, seguo con passione lo streetwear e tutto ciò che ruota attorno alla cultura visiva, ma non solo.
-                        </br>
-                        </br>
-                        Questo è solo un breve riassunto di chi sono. Qui sotto è possibile visualizzare il mio CV, mentre nella sezione Contatti trovi tutti i riferimenti per scrivermi anche solo per scambiare due parole. </br>
+                        ${translations[state.currentLanguage].about.role}
                     </p>
 
                     <div style="font-size: 13px; margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
@@ -440,7 +422,7 @@ function createWindow(type) {
                         transition: all 0.2s; cursor: pointer; font-family: Courier New, monospace; font-weight: bold;"
                         onmouseover="this.style.background='#718096'; this.style.boxShadow='0 0 8px rgba(113, 128, 150, 0.5)'" 
                         onmouseout="this.style.background='#4a5568'; this.style.boxShadow='none'">
-                            <strong>QUI TROVI IL MIO CV</strong>
+                            <strong>${translations[state.currentLanguage].about.download}</strong>
                         </button>
                     </div>
                 </div>
@@ -527,12 +509,11 @@ function createWindow(type) {
                     </div>
                 </div>
                 <div class="window-content">
-                    <p><strong style="color: #ff00ff;">MY INFO</strong></p>
-                    <p style="margin-top: 10px;">Location: Pozzuoli, Campania, Italy</p>
-                    <p><strong>Email:</strong> <span style="color: #00ffff;">Grieco.Gennaro128@gmail.com</span></p>
-                    <p><strong>LinkedIn:</strong> <span style="color: #ffff00;">www.linkedin.com/in/gennaro-grieco</span></p>
-                    <p><strong>GitHub:</strong> <span style="color: #39ff14;">https://github.com/6iano</span></p>
-                    <p><strong>Beanche:</strong> <span style="color: #ff006e;">https://www.behance.net/gennarogrieco1</span></p>
+                    <p><strong style="color: #6d41aa;">MY LINKS</strong></p>
+                    <p><strong>Email:</strong> <span style="color: #4a8bc1;">Grieco.Gennaro128@gmail.com</span></p>
+                    <p><strong>LinkedIn:</strong> <span style="color: #4a8bc1;">www.linkedin.com/in/gennaro-grieco</a></span></p>
+                    <p><strong>GitHub:</strong> <span style="color: #4a8bc1;">https://github.com/6iano</span></p>
+                    <p><strong>Behance:</strong> <span style="color: #4a8bc1;">https://www.behance.net/gennarogrieco1</span></p>
                     
                     <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
                         <p><strong style="color: #00ffff;">LETS WORK TOGETHER!</strong></p>
