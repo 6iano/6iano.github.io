@@ -560,10 +560,10 @@ function createWindow(type) {
                     </div>
                 </div>
                 <div class="window-content">
-                    <canvas id="snakeCanvas" class="game-canvas" width="300" height="250"></canvas>
+                    <canvas id="snakeCanvas" class="game-canvas" width="310" height="250"></canvas>
                     <div class="game-info">
-                        <span>Score: <span id="gameScore" style="color: #ffff00;">0</span></span>
-                        <span>Level: <span id="gameLevel" style="color: #00ffff;">1</span></span>
+                        <span>Score: <span id="gameScore" style="color: #FFFB30;">0</span></span>
+                        <span>Level: <span id="gameLevel" style="color: #34A491;">1</span></span>
                     </div>
                     <div class="game-controls">
                         <button class="game-btn" id="gameStartBtn">START</button>
@@ -1097,7 +1097,8 @@ function initSnakeGame() {
     const gridSize = 10;
 
     function drawGame() {
-        ctx.fillStyle = '#000';
+        //Game background color
+        ctx.fillStyle = '#02024C';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         // Draw snake
@@ -1107,7 +1108,7 @@ function initSnakeGame() {
         });
 
         // Draw food
-        ctx.fillStyle = '#ff00ff';
+        ctx.fillStyle = '#FFFB30';
         ctx.fillRect(gameState.food.x, gameState.food.y, gridSize - 2, gridSize - 2);
     }
 
