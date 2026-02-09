@@ -105,13 +105,6 @@ const translations = {
     }
 };
 
-const tracks = [
-    { name: 'Synthwave Dreams', artist: 'RetroWave' },
-    { name: 'Neon Nights', artist: 'CyberArtist' },
-    { name: 'Digital Paradise', artist: 'SynthMaster' },
-    { name: 'Vaporwave Vibes', artist: 'VaporKing' }
-];
-
 //Per poter cambiare nome nella Taskbar, cambiare sia nome qui che in ogni 'case' sotto
 const projectData = {
     'AGRIVOLT': {
@@ -345,7 +338,7 @@ function createWindow(type) {
             const project = projectData[type];
             content = `
                 <div class="window-header">
-                    <span class="window-title">📁 ${project.title}</span>
+                    <span class="window-title"><img src="Assets/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">${project.title}</span>
                     <div class="window-controls">
                         <button class="window-btn">_</button>
                         <button class="window-btn">□</button>
@@ -1511,4 +1504,3 @@ function updateTrackDisplay() {
         }
     }
 }
-
