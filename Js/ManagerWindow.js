@@ -1290,7 +1290,7 @@ function createSettingsWindow() {
 
     const content = `
 <div class="window-header">
-    <span class="window-title">⚙️ System Settings</span>
+    <span class="window-title"><img src="Assets/Icons/start.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">System Settings</span>
     <div class="window-controls">
         <button class="window-btn">_</button>
         <button class="window-btn">□</button>
