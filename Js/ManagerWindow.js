@@ -24,12 +24,12 @@ const translations = {
             download: '📥 DOWNLOAD MY CV' 
         },
         projects: {
-            title: '<img src="Assets/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Projects',
+            title: '<img src="Assets/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">PROJECTS',
             description: 'Modern design system with responsive components and accessibility features.',
             tools: 'Ciao'
         },
         contact: {
-            title: '<img src="Assets/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contact',
+            title: '<img src="Assets/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">CONTACTS',
             getInTouch: 'MY INFO',
             location: 'Location: Pozzuoli, Naples',
             email: 'Email: Grieco.Gennaro128@gmail.com',
@@ -44,7 +44,7 @@ const translations = {
             sendBtn: '📤 SEND EMAIL'
         },
         game: {
-            title: '<img src="Assets/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake'
+            title: '<img src="Assets/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">GAME'
         },
         info: { //Readme Folder
             title: '<img src="Assets/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">README.txt'
@@ -70,12 +70,12 @@ const translations = {
             download: 'SCARICA IL MIO CV' 
         },
         projects: {
-            title: '<img src="Assets/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Progetti',
+            title: '<img src="Assets/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">PROGETTI',
             description: 'Sistema di design moderno con componenti responsive e funzioni di accessibilità.',
             tools: 'Groda'
         },
         contact: {
-            title: '<img src="Assets/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Contatti',
+            title: '<img src="Assets/Icons/contact.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">CONTATTI',
             getInTouch: 'CONTATTAMI',
             location: 'Ubicazione: Santa Maria Capua Vetere, Campania, Italia',
             email: 'Email:',
@@ -90,10 +90,10 @@ const translations = {
             sendBtn: '📤 INVIA EMAIL'
         },
         game: {
-            title: '<img src="Assets/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Snake'
+            title: '<img src="Assets/Icons/game.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">GAME'
         },
         info: { //Readme Folder
-            title: '<img src="Assets/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">Leggimi.txt',
+            title: '<img src="Assets/Icons/readme.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">LEGGIMI.txt',
         },
         icons: {
             about: 'ABOUT ME',
@@ -319,8 +319,21 @@ function createWindow(type) {
     windowEl.setAttribute('data-window-id', type);
     windowEl.style.left = `${50 + Math.random() * 100}px`;
     windowEl.style.top = `${50 + Math.random() * 100}px`;
-    windowEl.style.width = type === 'game' ? '350px' : '400px';
-    windowEl.style.zIndex = ++state.zIndex;
+
+    // Applica dimensioni diverse per le vinestre Game e Contacts
+    if (type === 'game') {
+        windowEl.style.width = '350px';
+        windowEl.style.zIndex = ++state.zIndex;
+    } else if (type === 'contact') {
+        windowEl.style.width = '480px';
+        windowEl.style.height = '180px';
+    } else {
+        windowEl.style.width = '400px';
+        windowEl.style.zIndex = ++state.zIndex;
+    }
+
+    //windowEl.style.width = type === 'game' ? '350px' : '400px';
+    //windowEl.style.zIndex = ++state.zIndex;
 
     let content = '';
     switch (type) {
@@ -502,12 +515,12 @@ function createWindow(type) {
                     </div>
                 </div>
                 <div class="window-content">
-                    <p><strong style="color: #6d41aa;">MY LINKS</strong></p>
+                    <p><strong style="color: #F08000;">VERY USEFUL LINKS</strong></p>
                     <p><strong>Email:</strong> <span style="color: #4a8bc1;">Grieco.Gennaro128@gmail.com</span></p>
                     <p><strong>LinkedIn:</strong> <span style="color: #4a8bc1;">www.linkedin.com/in/gennaro-grieco</a></span></p>
                     <p><strong>GitHub:</strong> <span style="color: #4a8bc1;">https://github.com/6iano</span></p>
                     <p><strong>Behance:</strong> <span style="color: #4a8bc1;">https://www.behance.net/gennarogrieco1</span></p>
-                    
+                    <!--
                     <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
                         <p><strong style="color: #00ffff;">LETS WORK TOGETHER!</strong></p>
                         <form id="contactForm" style="margin-top: 10px;">
@@ -532,6 +545,7 @@ function createWindow(type) {
                             </button>
                         </form>
                     </div>
+                    -->
                 </div>
             `;
             break;
