@@ -21,7 +21,7 @@ const translations = {
                 In my free time, I play video games, follow streetwear and everything related to visual culture with passion, but that's not all.
                 This is just a brief summary of who I am. Below you can view my CV, while in the Contact section you will find all the information you need to write to me, even if it's just to exchange a few words.
             `,
-            download: '📥 DOWNLOAD MY CV' 
+            download: 'SEE MY CV!' 
         },
         projects: {
             title: '<img src="Assets/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">PROJECTS',
@@ -67,7 +67,7 @@ const translations = {
                 Nel tempo libero videogioco, seguo con passione lo streetwear e tutto ciò che ruota attorno alla cultura visiva, ma non solo.
                 Questo è solo un breve riassunto di chi sono. Qui sotto è possibile visualizzare il mio CV, mentre nella sezione Contatti trovi tutti i riferimenti per scrivermi anche solo per scambiare due parole.
             `,
-            download: 'SCARICA IL MIO CV' 
+            download: 'GUARDA IL MIO CV!' 
         },
         projects: {
             title: '<img src="Assets/Icons/projects.png" style="width: 16px; height: 16px; margin-right: 5px; vertical-align: middle;">PROGETTI',
@@ -302,6 +302,25 @@ const projectData = {
             'Assets/Imgs/Prjct_09/1.jpg',
             'Assets/Imgs/Prjct_09/2.jpg'
         ]
+    },
+    'DotWireframe': {
+        style: {
+            color: "#aaa9a9"
+        },
+        title: 'DOTWIREFRAME',
+        //category: 'AI Integration',
+        date: 'N.A.',
+        location: 'N.A.',
+        brief: 'Riuscire a trasmutare una parola in una versione più astratta, grafica, ma sempre con delle regole ben precise',
+        role: 'Trasformate una parola in un grafo fatto di punti e lienee',
+        tools: 'Xcode, IA',
+        link: '',
+        gallery: [
+            'Assets/Imgs/Prjct_10/1.jpg',
+            'Assets/Imgs/Prjct_10/2.jpg',
+            'Assets/Imgs/Prjct_10/3.jpg',
+            'Assets/Imgs/Prjct_10/4.jpg'
+        ]
     }
 };
 // ===== WINDOW MANAGEMENT =====
@@ -326,7 +345,7 @@ function createWindow(type) {
         windowEl.style.zIndex = ++state.zIndex;
     } else if (type === 'contact') {
         windowEl.style.width = '480px';
-        windowEl.style.height = '180px';
+        windowEl.style.height = '400px';
     } else {
         windowEl.style.width = '400px';
         windowEl.style.zIndex = ++state.zIndex;
@@ -346,6 +365,7 @@ function createWindow(type) {
         case 'URBAN KONG':
         case 'PLAYLIST COVERS':
         case 'SONGS COVERS':
+        case 'DotWireframe':
 
             // Project window with full structure
             const project = projectData[type];
@@ -381,12 +401,14 @@ function createWindow(type) {
                         <h4 style="color: #718096; font-size: 11px; margin-bottom: 6px; text-transform: uppercase;">SOFTWARE</h4>
                         <p style="font-size: 11px; color: #cbd5e0;">${project.tools}</p>
                     </div>
-
+                    
+                    <!--
                     <div style="padding-top: 10px; border-top: 1px solid #718096;">
                         <a href="${project.link}" target="_blank" style="display: inline-block; padding: 6px 12px; background: #4a5568; color: #f7fafc; text-decoration: none; font-size: 10px; border-radius: 3px; transition: all 0.2s; cursor: pointer;" onmouseover="this.style.background='#718096'; this.style.boxShadow='0 0 8px rgba(113, 128, 150, 0.5)'" onmouseout="this.style.background='#4a5568'; this.style.boxShadow='none'">
                             VISITA IL SITO
                         </a>
                     </div>
+                    -->
 
                     <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
                         <h4 style="color: #718096; font-size: 11px; margin-bottom: 8px; text-transform: uppercase;">GALLERY</h4>
@@ -420,17 +442,6 @@ function createWindow(type) {
                     <p style="margin-top: 10px; letter-spacing: 0px;">
                         ${translations[state.currentLanguage].about.role}
                     </p>
-
-                    <div style="font-size: 13px; margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
-                        <button onclick="openPDFViewer('CV Grieco Gennaro.pdf', 'CV Grieco Gennaro.pdf')" 
-                        style="display: inline-block; padding: 8px 16px; background: #4a5568; color: #f7fafc; 
-                        text-decoration: none; font-size: 11px; border: 2px solid #718096; border-radius: 3px; 
-                        transition: all 0.2s; cursor: pointer; font-family: Courier New, monospace; font-weight: bold;"
-                        onmouseover="this.style.background='#718096'; this.style.boxShadow='0 0 8px rgba(113, 128, 150, 0.5)'" 
-                        onmouseout="this.style.background='#4a5568'; this.style.boxShadow='none'">
-                            <strong>${translations[state.currentLanguage].about.download}</strong>
-                        </button>
-                    </div>
                 </div>
             `;
             break;
@@ -478,7 +489,7 @@ function createWindow(type) {
                         </div>
                         
                         <!-- NOME PROGETTO -->
-                        <strong style="color: ${project.style.color}; font-size: 11px; text-align: center; max-width: 100px; word-wrap: break-word;">
+                        <strong style="color: ${project.style.color}; font-size: 11px; text-align: center; max-width: 110px; word-wrap: break-word;">
                             ${project.title}
                         </strong>
                         
@@ -515,11 +526,23 @@ function createWindow(type) {
                     </div>
                 </div>
                 <div class="window-content">
-                    <p><strong style="color: #F08000;">VERY USEFUL LINKS</strong></p>
+                    <p><strong style="color: #F08000;">LET'S WORK TOGETHER!</strong></p>
                     <p><strong>Email:</strong> <span style="color: #4a8bc1;">Grieco.Gennaro128@gmail.com</span></p>
+                    <div style="font-size: 13px; margin-top: 5px; padding-top: 5px;">
+                        <button onclick="openPDFViewer('CV Grieco Gennaro.pdf', 'CV Grieco Gennaro.pdf')" 
+                        style="display: inline-block; padding: 8px 16px; background: #4a5568; color: #f7fafc; 
+                        text-decoration: none; font-size: 11px; border: 2px solid #718096; border-radius: 3px; 
+                        transition: all 0.2s; cursor: pointer; font-family: Courier New, monospace; font-weight: bold;"
+                        onmouseover="this.style.background='#718096'; this.style.boxShadow='0 0 8px rgba(113, 128, 150, 0.5)'" 
+                        onmouseout="this.style.background='#4a5568'; this.style.boxShadow='none'">
+                            <strong>${translations[state.currentLanguage].about.download}</strong>
+                        </button>
+                    </div>
+                    <p><strong style="color: #F08000;  margin: 8px;">VERY USEFUL LINKS!</strong></p>
                     <p><strong>LinkedIn:</strong> <span style="color: #4a8bc1;">www.linkedin.com/in/gennaro-grieco</a></span></p>
                     <p><strong>GitHub:</strong> <span style="color: #4a8bc1;">https://github.com/6iano</span></p>
                     <p><strong>Behance:</strong> <span style="color: #4a8bc1;">https://www.behance.net/gennarogrieco1</span></p>
+
                     <!--
                     <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #718096;">
                         <p><strong style="color: #00ffff;">LETS WORK TOGETHER!</strong></p>
@@ -546,6 +569,7 @@ function createWindow(type) {
                         </form>
                     </div>
                     -->
+
                 </div>
             `;
             break;
