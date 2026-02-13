@@ -316,10 +316,10 @@ const projectData = {
         tools: 'Xcode, IA',
         link: '',
         gallery: [
-            'Assets/Imgs/Prjct_10/1.jpg',
-            'Assets/Imgs/Prjct_10/2.jpg',
-            'Assets/Imgs/Prjct_10/3.jpg',
-            'Assets/Imgs/Prjct_10/4.jpg'
+            'Assets/Imgs/Prjct_10/1.png',
+            'Assets/Imgs/Prjct_10/2.png',
+            'Assets/Imgs/Prjct_10/3.png',
+            'Assets/Imgs/Prjct_10/4.png'
         ]
     }
 };
